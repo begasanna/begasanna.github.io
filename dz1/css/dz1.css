@@ -1,0 +1,33 @@
+body {
+  /*margin: 0;
+  padding: 0;
+  width: 100%;*/
+  background-color: #EFEFEF;
+}
+#content {
+  padding: 5px 35px 10px 35px;
+  box-shadow: 0px 0px 14px -4px #707070;
+}
+h1 {
+  text-align: center;}
+.foto {
+text-align: center;;
+}
+p, ul {
+  font-size: 14px;}
+p {
+  text-indent: 15px;
+}
+
+#wrapper {
+width: 400px;
+height: 600px;
+margin: 8px auto 40px auto;
+background-color: white;
+}
+h1 {
+  display: block;
+  height: 25px;
+  font-size: 20px;
+  padding-top: 22px;
+}
