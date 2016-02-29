@@ -6,8 +6,12 @@ body {
 }
 #content {
   padding: 5px 35px 10px 35px;
-  box-shadow: 0px 0px 14px -4px #707070;
+  box-shadow: 0px 0px 14px -4px #707070;}
+.text {
+  border-bottom: 1px solid grey;
 }
+
+
 h1 {
   text-align: center;}
 .foto {
