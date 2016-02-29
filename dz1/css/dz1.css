@@ -10,8 +10,12 @@ body {
 .text {
   border-bottom: 1px solid grey;
 }
-
-
+.cont {
+  margin-top: 2px;
+}
+.tel {
+  margin-bottom: 2px;
+}
 h1 {
   text-align: center;}
 .foto {
@@ -25,7 +29,7 @@ p {
 
 #wrapper {
 width: 400px;
-height: 600px;
+height: 560px;
 margin: 8px auto 40px auto;
 background-color: white;
 }
