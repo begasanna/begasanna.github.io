@@ -31,7 +31,7 @@ width: 970px;
 height: 40px;
 }
 #menu #menubar {
-  background-image:url(img/back_menu.png);
+  background-image:url(../img/back_menu.png);
   background-repeat: repeat-x;
 }
 
@@ -48,7 +48,7 @@ li.menubar {
   display: inline-block;
   width: 140px;
   height: 97%;
-  background-image:url(img/back_menu.png);
+  background-image:url(../img/back_menu.png);
   background-repeat: repeat-x;}
 
 #menubar a {
@@ -60,7 +60,7 @@ li.menubar {
   }
 
 #menubar a:hover {
-  background-image: url(img/hover_menu.png);
+  background-image: url(../img/hover_menu.png);
 }
 #content {
   margin: 50px 50px auto 50px;
@@ -97,7 +97,7 @@ p {
   margin-top: 40px;
 }
 #footer{
-  background-image: url(img/footer.png);
+  background-image: url(../img/footer.png);
   margin-top: 60px;
 }
 li.menubarf {
