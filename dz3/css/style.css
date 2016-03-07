@@ -89,7 +89,9 @@ li.menubar {
 }
 
 #kololo {
-  margin-left: 290px;
+  width: 680px;
+  float: right;
+  margin-left: 30px;
 }
 p {
   margin-top: 40px;
