@@ -1,0 +1,162 @@
+body {
+  background-image: url(../img/bkg.png);
+  background-repeat: repeat-x;
+  background-color: #0c749f;
+  font-family: tahoma;
+}
+#header {
+margin-top: 40px;
+  width: 1000px;
+  height: 173px;
+}
+#header:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#logo {
+  padding-top: 5px;
+  padding-left: 25px;
+  float: left;
+}
+#conteiner {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 22px 0px rgba(79,77,79,1);
+  -moz-box-shadow: 0px 3px 22px 0px rgba(79,77,79,1);
+   box-shadow: 0px 3px 22px 0px rgba(79,77,79,1);
+  }
+.writes {
+  color: #128aa7;
+  font-size: 12px;
+  padding-top:8px;
+  padding-left: 820px;
+  line-height: 1.5em;
+}
+#aziaimg {
+  height: 237px;
+  border-bottom: 1px solid #cacbcb;
+}
+
+.country li {
+  font-size: 9px;
+  float:left;
+  text-align: center;
+  margin: 0 7px;
+  text-decoration: underline;
+}
+.country {
+  float: right;
+  margin-top: 30px;
+}
+ #menu {
+   width: 100%;
+   background-color: #353535;
+   border-bottom: 1px solid #000;
+   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+      /*box-shadow: 0px 0px 10px #777, 0px 15px 10px #777;*/
+ }
+
+ #menu:after {
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+ }
+
+ #menu li{
+   text-align: center;
+   font-size: 14px;
+   line-height: 30px;
+   display:block;
+   float: left;
+   position: relative;
+   }
+
+   #menu a {
+     display: block;
+     padding: 0 35px;
+     color: #fff;
+   }
+
+#content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#sidebarleft, #sidebarright {
+  margin-top: 3px;
+  width: 210px;
+  height: 1000px;
+  background-color: #edeef0;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+  font-size: 14px;
+}
+#sidebarleft {
+  float: left;
+}
+#text {
+  margin-top: 3px;
+  background: white;
+  width: 565px;
+  height: 1000px;
+  float: left;
+  }
+  #sidebarright {
+    float: right;
+  }
+
+  .info, .news {
+    padding: 10px 15px 0 15px;
+    color: #424c43;
+  }
+
+#footer {
+  text-align: center;
+}
+  #copy {
+    height: 30px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  ul.sub {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    }
+
+    #menu ul li:hover>ul.sub {
+    display: block;}
+
+    ul.sub > li {
+    display: block;}
+
+   ul.sub > li > a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    background-color: #353535;
+    text-decoration: none;
+}
+ul.sub > li > a:hover {
+    text-decoration: underline;
+}
