@@ -26,7 +26,7 @@ h2 {
 }
 
 #logo {
-  padding-top: 5px;
+  padding-top: 8px;
   padding-left: 25px;
   float: left;
 }
@@ -46,7 +46,7 @@ h2 {
   line-height: 1.5em;
 }
 #aziaimg {
-  height: 237px;
+ height: 237px;
   border-bottom: 1px solid #cacbcb;
 }
 
@@ -60,14 +60,17 @@ h2 {
 .country {
   float: right;
   margin-top: 30px;
+  margin-right: 20px;
 }
+.country a {
+  color: #128aa7;
+}
+
  #menu {
    width: 100%;
    background-color: #353535;
    border-bottom: 1px solid #000;
-   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-      /*box-shadow: 0px 0px 10px #777, 0px 15px 10px #777;*/
- }
+    }
 
  #menu:after {
    content: ".";
@@ -91,7 +94,17 @@ h2 {
      padding: 0 35px;
      color: #fff;
    }
-
+#content {
+/*  position: relative;*/
+}
+#ten {
+position: absolute;
+width: 1000px;
+height: 4px;
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.01) 98%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 98%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 98%,rgba(0,0,0,0) 100%);
+}
 #content:after {
   content: ".";
   display: block;
@@ -101,7 +114,6 @@ h2 {
 }
 
 #sidebarleft, #sidebarright {
-  margin-top: 3px;
   width: 210px;
   height: 1000px;
   background-color: #edeef0;
@@ -113,7 +125,6 @@ h2 {
   float: left;
 }
 #text {
-  margin-top: 3px;
   background: white;
   width: 565px;
   height: 1000px;
@@ -135,6 +146,7 @@ h2 {
     height: 30px;
     font-size: 12px;
     margin-top: 10px;
+    color: #dee7ee;
   }
 
   ul.sub {
@@ -142,6 +154,7 @@ h2 {
     position: absolute;
     top: 30px;
     left: 0;
+    z-index: 0;
     }
 
     #menu ul li:hover>ul.sub {
