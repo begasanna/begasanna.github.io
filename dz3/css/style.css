@@ -48,8 +48,8 @@ li.menubar {
   }
 
 #menubar a:hover {
-  border-left: #979292;
-  border-right: #979292;
+  border-left: 1px solid #979292;
+  border-right: 1px solid #979292;
   background: -webkit-linear-gradient(top, #5e5e5e, #434141);
   background: -moz-linear-gradient(top, #5e5e5e, #434141);
   background: -o-linear-gradient(top,#5e5e5e, #434141);
