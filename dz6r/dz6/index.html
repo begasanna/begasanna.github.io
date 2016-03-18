@@ -5,7 +5,7 @@
     <title>Zazor</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    </head>
   <body>
     <div id="wrapper">
      <header class="clearfix">
@@ -28,8 +28,6 @@
          <a href="#"><img src="img/map.png" alt="map"></a>
          <a href="#"><img src="img/letter.png" alt="letter"></a>
        </div>
-
-
      </header>
 
      <div class="image"><img src="img/mainimg.png" id="mainimage" alt="main"></div>
@@ -43,7 +41,7 @@
            <li><a href="#">КОНТАКТЫ</a></li>
          </ul>
        </nav>
-       <div class="korzina">
+       <div class="pay">
          <ul class="clearfix">
            <li><a href="#"><img src="img/korzina1.png"></a></li>
            <li><span>Товаров:</span></li>
@@ -59,29 +57,29 @@
        <form method="post" action="#" id="research">
          <div id="searchavto">
            <h2>Диски</h2>
-          <p><span class="marka">Марка авто</span> <select name="avto" id="savto">
-             <option value="all">all</option>
+          <p class="selects"><span class="marka">Марка авто</span> <select name="avto" class="savto">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
            </select></p>
 
-           <p><span class="model"><span class="black">Модель</span></br>автомобиля</span><select name="avto" id="savto">
-             <option value="all">all</option>
+           <p class="selects"><span class="model"><span class="black">Модель</span></br>автомобиля</span><select name="avto" class="savto">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
            </select></p>
 
-           <p><span class="year"><span class="black">Год выпуска</span></br>автомобиля</span><select name="avto" id="year">
-             <option value="all">all</option>
+           <p class="selects"><span class="year"><span class="black">Год выпуска</span></br>автомобиля</span><select name="avto" id="year">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
            </select></p>
 
-           <p><span class="kompl"><span class="black">Комплектация</span></span><select name="avto" class="kompl" id="savto">
-             <option value="all">all</option>
+           <p class="selects"><span class="kompl"><span class="black">Комплектация</span></span><select name="avto" class="kompl savto">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
@@ -90,29 +88,29 @@
 
          <div id="searchdisk">
            <h2>Шины</h2>
-          <p><span class="marka">Марка авто</span> <select name="avto" id="savto">
-             <option value="all">all</option>
+          <p class="selects"><span class="marka">Марка авто</span> <select name="avto" class="savto">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
            </select></p>
 
-           <p><span class="model"><span class="black">Модель</span></br>автомобиля</span><select name="avto" id="savto">
-             <option value="all">all</option>
+           <p class="selects"><span class="model"><span class="black">Модель</span></br>автомобиля</span><select name="avto" class="savto">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
            </select></p>
 
-           <p><span class="year"><span class="black">Год выпуска</span></br>автомобиля</span><select name="avto" id="year">
-             <option value="all">all</option>
+           <p class="selects"><span class="year"><span class="black">Год выпуска</span></br>автомобиля</span><select name="avto" id="year">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
            </select></p>
 
-           <p><span class="kompl"><span class="black">Комплектация</span></span><select class="kompl" name="avto" id="savto">
-             <option value="all">all</option>
+           <p class="selects"><span class="kompl"><span class="black">Комплектация</span></span><select class="kompl savto" name="avto">
+             <option value="all"></option>
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>
@@ -126,39 +124,40 @@
      <div id="content" class="clearfix">
        <aside class="left">
          <p id="catalog">КАТАЛОГ ПРОДУКЦИИ</p>
-         <ul id=>
-            <li><p id="shini">ШИНЫ
-                  <ul>
+         <ul>
+            <li>
+                <ul><p class="tyre">ШИНЫ</p>
                   <li><a href="#">Наименование1</a></li>
                   <li><a href="#">Наименование2</a></li>
                   <li><a href="#">Наименование3</a></li>
                   <li><a href="#">Наименование4</a></li>
-                </ul></p></li>
-            <li><p id="diski">ДИСКИ
+                </ul></li>
+            <li><p class="disks">ДИСКИ</p>
                 <ul>
                   <li><a href="#">Наименование1</a></li>
                   <li><a href="#">Наименование2</a></li>
                   <li><a href="#">Наименование3</a></li>
                   <li><a href="#">Наименование4</a></li>
-                </ul></p></li>
-            <li><p id="bolti">БОЛТЫ
+                </ul></li>
+            <li><p class="bolts">БОЛТЫ</p>
               <ul>
                   <li><a href="#">Наименование1</a></li>
                   <li><a href="#">Наименование2</a></li>
                   <li><a href="#">Наименование3</a></li>
                   <li><a href="#">Наименование4</a></li>
-                </ul></p></li>
+                </ul></li>
          </ul>
        </aside>
+
        <aside class="right">
          <p id="brands">БРЕНДЫ</p>
-         <p id="shini">ШИНЫ</p>
+         <p class="tyre">ШИНЫ</p>
            <form action="#" method="post">
              <p><input type="checkbox" id="a" value="1"><label for="a">Бренд 1</label></p>
              <p><input type="checkbox" id="b" value="2"><label for="b">Бренд 2</label></p>
              <p><input type="checkbox" id="c" value="3"><label for="c">Бренд 3</label></p>
            </form>
-           <p id="diski">ДИСКИ</p>
+           <p class="disks">ДИСКИ</p>
            <form action="#" method="post">
              <p><input type="checkbox" id="d" value="1"><label for="d">Бренд 1</label></p>
              <p><input type="checkbox" id="e" value="2"><label for="e">Бренд 2</label></p>
@@ -178,7 +177,7 @@
          </section>
          <section>
            <p id="name">Nokian</p>
-           <p id="type">Hakkapeliitta R</p>
+           <p id="type">Hakkapelitta R</p>
            <figure>
            <img src="img/nokian.png" alt="good">
            </figure>
@@ -203,7 +202,7 @@
          </section>
          <section>
            <p id="name">Nokian</p>
-           <p id="type">Hakkapeliitta R</p>
+           <p id="type">Hakkapelitta R</p>
            <figure>
            <img src="img/nokian.png" alt="good">
            </figure>
@@ -218,7 +217,7 @@
            <figcaption>393,00 грн</figcaption>
          </section>
 
-         <section>
+         <section class="bottom">
            <p id="name">Goodyear</p>
            <p id="type">Ultra Grip Extreme</p>
            <figure>
@@ -226,7 +225,7 @@
            </figure>
            <figcaption>90,00 грн</figcaption>
          </section>
-         <section>
+         <section class="bottom">
            <p id="name">Nokian</p>
            <p id="type">Hakkapeliitta R</p>
            <figure>
@@ -234,7 +233,7 @@
            </figure>
            <figcaption>115,00 грн</figcaption>
          </section>
-         <section>
+         <section class="bottom">
            <p id="name">Hankook</p>
            <p id="type">K 708 155/65 R14</p>
            <figure>
