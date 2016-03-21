@@ -267,14 +267,17 @@ select.kompl {
   margin-right: 9px;
 }
 button.search-go {
+  display: inline-block;
   float: right;
   cursor: pointer;
   margin: 10px 19px 9px 0px;
   border: none;
-  text-decoration: underline;
+  text-decoration: none;
   font: italic 14px Arial;
-  color: #154467;
   background: none;
+  color: #154467;
+  border-bottom: 2px solid #a6b1bc;
+  text-indent:-9px;
 }
 aside.left {
   width: 186px;
@@ -305,20 +308,19 @@ section {
 section.bottom {
     margin: 17px 6px 21px 22px;
 }
-p#name{
+a.name{
 color:#206988;
 font: bold 14px 'Lucida Sans Unicode';
 line-height: 16px;
 }
 
-p#type{
+p.type{
 color: #1f2528;
 }
 figcaption {
   font: italic bolder 16px Arial;
   color: #114165;
   padding-left: 12px;
-
 }
 figure {
   text-align: center;
@@ -340,12 +342,11 @@ aside ul, aside li, aside li a, aside p, aside form {
   }
 aside li a:hover{
   font: bold italic 14px 'Arial';
-  text-decoration: underline;
+  text-decoration: underline #a6b1bc;
 }
 aside li li{
   list-style: circle;
   list-style-position: inside;
-  /*display:inline-block;*/
   margin: 3px 0px 8px 8px
   }
   aside li li a {
