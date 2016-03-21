@@ -188,8 +188,7 @@ div#searchavto span, div#searchdisk span{
   display: inline-block;
 }
 
-@-moz-document url-prefix() {
-body {background: #F00;}
+@-moz-document url-prefix(){
 p.selects {
   display: block;
   margin: -1px 0 -5px -2px;
@@ -218,6 +217,7 @@ aside.left p.bolts {
 #content aside.right form input#submit {
     margin: 13px 0 0 7px;
     padding: 4px 14px;
+    cursor: pointer
 }
 }
 
@@ -268,11 +268,12 @@ select.kompl {
 }
 button.search-go {
   float: right;
+  cursor: pointer;
   margin: 10px 19px 9px 0px;
   border: none;
   text-decoration: underline;
-  font-style: italic;
-  font-weight: bold;
+  font: italic 14px Arial;
+  color: #154467;
   background: none;
 }
 aside.left {
@@ -471,6 +472,7 @@ aside.right form input#submit {
   margin: 14px 0 0 6px;
   color: #fff;
   font-size: 11px;
+  cursor: pointer;
 }
 #company {
   text-align: center;
