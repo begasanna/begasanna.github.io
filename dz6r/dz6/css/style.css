@@ -267,18 +267,16 @@ select.kompl {
   margin-right: 9px;
 }
 button.search-go {
-  display: inline-block;
   float: right;
   cursor: pointer;
-  margin: 10px 19px 9px 0px;
-  border: none;
-  text-decoration: none;
-  font: italic 14px Arial;
+  margin: 12px 17px 9px 0px;
   background: none;
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: #a6b1bc;
+  font: italic 14px Arial;
   color: #154467;
-  border-bottom: 2px solid #a6b1bc;
-  text-indent:-9px;
-}
+  }
 aside.left {
   width: 186px;
   float: left;
