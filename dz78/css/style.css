@@ -124,6 +124,27 @@ nav {
   right:219px;
   z-index:0;
 }
+.slider_pager {
+  position: absolute;
+  top: 450px;
+  left: 30%;
+}
+.pager_item {
+  display: inline-block;
+  padding-right: 5px;
+      }
+.pager_link {
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  }
+.pager_link.active{
+  box-sizing: border-box;
+  border: 3px solid white;
+  }
 article {
   position: relative;
   background: rgba(116,80,131,1);
@@ -206,7 +227,7 @@ main {
 .content {
   width: 960px;
   margin: 0 auto;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 .content_items {
   padding-top: 99px;
@@ -227,6 +248,28 @@ main {
   position: absolute;
   top:18px;
   left:-24px;
+  }
+.content_pager{
+  text-align: center;
+  padding-top: 20px;
+}
+.pager_item__mod {
+  display: inline-block;
+  padding-right: 5px;
+      }
+.pager_link__mod {
+  cursor: pointer;
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 50%;
+  }
+.pager_link__mod.active{
+  box-sizing: border-box;
+  background-color: #000;
+  border: 2px solid #e9e9e9;
   }
 .content_starts h2, .content_updates h2 {
   font-size: 30px;
@@ -419,6 +462,8 @@ nav {
   top: 60px;
   left: -120px;
   }
+.slider_pager {
+  left: -50px;}
 .article_set, .article_chat, .article_music {
   width: 27%;}
 .article_notes{
@@ -585,6 +630,9 @@ a.mnav_link_submenu:hover{
   margin-top: 94px;
   padding-bottom: 88px;
 }
+.slider_pager {
+  left: -100px;
+  top: 280px;}
 .article_set, .article_chat, .article_music {
   float: none;
   margin: 0 0 26px 12px;
