@@ -687,6 +687,7 @@ a.mnav_link_submenu:hover{
   text-align: center;
   }
 .copyright_menu {
+  display: inline-block;
   float: none;
   margin-left: 6px;}
 .copyright_conteiner {
