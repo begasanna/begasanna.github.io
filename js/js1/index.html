@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>pow</title>
+  </head>
+  <body>
+    <script>
+
+    // Написать функцию pow, аналогичную Math.pow, которая должна возводить
+    // указанное число в указанную степень. Указать число и степень пользователь
+    // должен через команду prompt. Результат выполнения функции вывести в консоль.
+    // Работать с целыми числами, большими, меньшими, и равными нулю.
+    // Бесконечности можно не обрабатывать
+
+    function pow(base, expon){
+      var base = prompt('Введите число', '');
+      var expon = prompt('Введите степень', '');
+      Number(base);
+      Number(expon);
+
+      if (base == 0, expon==0 )
+alert ('Ошибка: допустимы только числа больше или меньше "0"');
+else
+      var result = base;
+      for (var i = 1; i < expon; i++) {
+        result = result * base;
+      }
+      console.log('Число в степени',result);
+      return result;
+    }
+    pow('','');
+
+    </script>
+  </body>
+</html>
