@@ -19,10 +19,15 @@
       Number(base);
       Number(expon);
 
-      if (base == 0, expon==0 )
-alert ('Ошибка: допустимы только числа больше или меньше "0"');
-else
+      if (base==0)
+      alert ('Ошибка: допустимы только числа больше или меньше "0"');
+      if (expon==0)
+      alert ('Ошибка: введенное число не "0"');
+
+      else
+
       var result = base;
+
       for (var i = 1; i < expon; i++) {
         result = result * base;
       }
