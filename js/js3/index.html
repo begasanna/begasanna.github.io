@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>this</title>
+  </head>
+  <body>
+
+    <script>
+    
+    var myDiv = document.createElement('div');
+    document.body.appendChild(myDiv);
+    myDiv.innerHTML = '<h1>Тест по программированию</h1>';
+    var myOl = document.createElement('ol');
+    myDiv.appendChild(myOl);
+
+    var myLi = document.createElement('li');
+    myLi.innerHTML = 'Вопрос №1';
+    myOl.appendChild(myLi);
+
+    var container = document.createElement('p')
+    container.innerHTML = '<p><input type="radio" name="rb1" value="0" checked="">Вариант ответа № 1</p>\
+    <p><input type="radio" name="rb1" value="1">Вариант ответа № 2</p>\
+    <p><input type="radio" name="rb1" value="0">Вариант ответа № 3</p>\
+    <p><input type="radio" name="rb1" value="0">Вариант ответа № 4</p>'
+
+    myLi.appendChild(container);
+
+
+    var myLi1 = document.createElement('li');
+    myLi1.innerHTML = 'Вопрос №2';
+    myOl.appendChild(myLi1);
+    var container1 = document.createElement('p')
+    container1.innerHTML = '<p><input type="radio" name="rb2" value="0" checked="">Вариант ответа № 1</p>\
+    <p><input type="radio" name="rb2" value="1">Вариант ответа № 2</p>\
+    <p><input type="radio" name="rb2" value="0">Вариант ответа № 3</p>\
+    <p><input type="radio" name="rb2" value="0">Вариант ответа № 4</p>'
+
+    myLi1.appendChild(container1);
+
+
+    var myLi2 = document.createElement('li');
+    myLi2.innerHTML = 'Вопрос №3';
+    myOl.appendChild(myLi2);
+    var container2 = document.createElement('p')
+    container2.innerHTML = '<p><input type="radio" name="rb3" value="0" checked="">Вариант ответа № 1</p>\
+    <p><input type="radio" name="rb3" value="0">Вариант ответа № 2</p>\
+    <p><input type="radio" name="rb3" value="0">Вариант ответа № 3</p>\
+    <p><input type="radio" name="rb3" value="1">Вариант ответа № 4</p>'
+
+    myLi2.appendChild(container2);
+
+
+console.log(document);
+    </script>
+
+  </body>
+</html>
