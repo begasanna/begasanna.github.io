@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Таймер</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+<script>
+var time;
+var running;
+
+function increment(){
+  if (running == 1) {
+    setTimeout(function(){
+      time++;
+      var hours = Math.floor(time/10/60/60);
+      var mins = Math.floor(time/10/60);
+      var secs = Math.floor(time/10%60);
+      var ms = time;
+      if (hours<10){hours = "0" + hours};
+      if (mins<10){mins = "0" + mins};
+      if (secs<10){secs = "0" + secs};
+      if (ms<10){ms = "000" + ms};
+      if (ms>=10 && ms < 100){ms = "00" + ms};
+      if (ms<1000 && ms>=100){ms = "0" + ms};
+      if (secs>=60) {secs = 0};
+      if(time>=999) {time = 0};
+      document.getElementById('output').innerHTML = hours + ':' + mins + ':' + secs + ':' + ms;
+      increment();
+    },100);
+  }
+}
+
+function startPause(){
+  if (running == 0){
+    running = 1;
+    increment();
+    document.getElementById('startPause').innerHTML = "PAUSE";
+  } else {
+    running = 0;
+    document.getElementById('startPause').innerHTML = "RESUME";
+  }
+}
+function reset(){
+   running = 0;
+   time = 0;
+   document.getElementById('startPause').innerHTML = "START";
+   document.getElementById('output').innerHTML = "00:00:00:0000";
+ }
+</script>
+</head>
+<body>
+<style scoped>
+        .button-success,
+        .button-error{
+            color: white;
+            border-radius: 6px;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+    </style>
+        <p id="output">00:00:00:0000</p>
+        <div id="controls">
+        <button class="button-success pure-button" id="startPause" onclick="startPause()">Start</button>
+        <button  class="button-error pure-button" onclick='reset()'>Reset</button>
+        </div>
+
+
+    </body>
+</html>
