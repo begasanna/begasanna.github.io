@@ -5,8 +5,8 @@
 <title>Таймер</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
 <script>
-var time;
-var running;
+var time = 0;
+var running = 0;
 
 function increment(){
   if (running == 1) {
@@ -31,7 +31,9 @@ function increment(){
 }
 
 function startPause(){
+
   if (running == 0){
+    console.log(running);
     running = 1;
     increment();
     document.getElementById('startPause').innerHTML = "PAUSE";
@@ -41,8 +43,8 @@ function startPause(){
   }
 }
 function reset(){
-   running = 0;
-   time = 0;
+  //  running = 0;
+  //  time = 0;
    document.getElementById('startPause').innerHTML = "START";
    document.getElementById('output').innerHTML = "00:00:00:0000";
  }
@@ -69,7 +71,5 @@ function reset(){
         <button class="button-success pure-button" id="startPause" onclick="startPause()">Start</button>
         <button  class="button-error pure-button" onclick='reset()'>Reset</button>
         </div>
-
-
     </body>
 </html>
