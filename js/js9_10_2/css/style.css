@@ -1,0 +1,148 @@
+body {
+  color: #000;
+  text-align: left;
+}
+form {
+  margin: 50px;
+  background: #99CCFF;
+  padding: 10px;
+}
+div {
+  margin-bottom: 10px;
+}
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox-sprite.png);
+	overflow: hidden;
+}
+.niceChecked {
+	background-position: 0 -17px;
+}
+.niceCheck input {
+	margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+#ch1,#ch2,#ch3{
+  display: none;
+}
+.niceCheckDisabled {
+	background-image: url(path-to/checkbox-disabled.png);
+}
+
+.nojs {
+  margin: 50px;
+  background: green;
+  padding: 10px;
+
+}
+.nojs input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.nojs label {
+	cursor: pointer;
+}
+.nojs label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-sprite.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.nojs input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+.nojs label:hover:after {
+background-position: 0 -34px;
+}
+.nojs input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+
+#ddmenu {
+  display: block;
+  height: 80px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(20, 20, 20, 0.2);
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  color: #8aa8bd;
+}
+
+#ddmenu li { display: block;
+  position: relative;
+  float: left;
+  font-size: 24px;
+  text-shadow: 1px 1px 0 #fff;
+  }
+
+#ddmenu li a {
+  display: block;
+  float: left;
+  padding: 0 30px;
+  line-height: 78px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #6c87c0;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+#ddmenu li:hover > a { color: #7180a0; background: #d9e2ee; }
+
+.submenu {
+  position: absolute;
+  top: 88px;
+  width: 175px;
+  background-color: #fff;
+  display: none;
+  margin: 0;
+  list-style: none;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.submenu1{
+  position: absolute;
+  left:185px;
+  width: 160px;
+  background: #fff;
+  display: none;
+  margin: 0;
+  list-style: none;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#ddmenu ul li {
+  display: block;
+  width: 100%;
+  font-size: 0.9em;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+#ddmenu ul li a {
+  display: block;
+  width: 100%;
+  padding: 6px 7px;
+  line-height: 1.4em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#ddmenu ul li a:hover {
+  background: #e9edf3;
+  color: green;
+}

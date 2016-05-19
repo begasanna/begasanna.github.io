@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>checkbox</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+    $('.submenu1').mouseenter(function () {
+    $('.submenu1').animate({
+    backgroundColor:'#6E90B9',
+    }, 500 );
+    });
+
+    $('.submenu1').mouseleave(function() {
+    $('.submenu1').animate({
+    backgroundColor:"#fff",
+    }, 500 );
+    });
+    });
+    </script>
+
+
+    </head>
+  <body>
+   <form action="#" method="post">
+    <div>
+      <label for="ch1">label 1</label>
+      <input type="checkbox" class="niceCheck" id="ch1" tabindex="1">
+    </div>
+    <div>
+      <label for="ch2">label 2</label>
+      <input type="checkbox" class="niceCheck" id="ch2" tabindex="2" value="2">
+    </div>
+    <div>
+      <label for="ch3">label 3</label>
+      <input type="checkbox" class="niceCheck" id="ch3">
+    </div>
+   </form>
+
+   <div class="nojs">
+     <p><input type="checkbox" id="test-check1" /gt;>
+    <label for="test-check1">Чекбокс 1:</label></p>
+    <p><input type="checkbox" id="test-check2" /gt;>
+   <label for="test-check2">Чекбокс 2:</label></p>
+   </div>
+
+   <div class="jqmenu">
+     <nav>
+     <ul id="ddmenu">
+       <li><a href="#">MENU1</a></li>
+       <li><a href="#">MENU2</a></li>
+       <li><a href="#">MENU3 &#9776;</a>
+                            <ul class="submenu sub-menu">
+                              <li><a href="#">SUBMENU 3.1</a></li>
+                              <li><a href="#">SUBMENU 3.2</a></li>
+                              <li><a href="#">SUBMENU 3.3</a></li>
+                              <li><a href="#">SUBMENU 3.4 &rsaquo;</a>
+                                <ul class="submenu1 sub-menu">
+                                  <li><a href="#">SUBMEN 3.4.1</a></li>
+                                  <li><a href="#">SUBMEN 3.4.2</a></li>
+                                  <li><a href="#">SUBMEN 3.4.3</a></li>
+                                  <li><a href="#">SUBMEN 3.4.4</a></li>
+                                  <li><a href="#">SUBMEN 3.4.5</a></li>
+                                </ul></li>
+                              </li>
+                              <li><a href="#">SUBMENU 3.5</a></li>
+                            </ul></li>
+       <li><a href="#">MENU4</a></li>
+       <li><a href="#">MENU5</a></li>
+     </ul>
+   </nav>
+
+
+   <script type="text/javascript">
+
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault();
+  });
+
+  $('#ddmenu li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul.submenu',this).stop(true,true).slideDown(400);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+      $('ul.submenu',this).stop(true,true).slideUp(200);
+    }, this), 400));
+  });
+
+  $('.submenu li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul.submenu1',this).stop(true,true).slideDown(400);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+      $('ul.submenu1',this).stop(true,true).slideUp(200);
+    }, this), 100));
+  });
+
+});
+</script>
+   </div>
+  </body>
+</html>
