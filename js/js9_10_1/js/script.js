@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
    jQuery('.jcarousel').jcarousel({
-      // Configuration goes here
+       wrap: 'circular'
    });
    $('.jcarousel-prev').jcarouselControl({
       target: '-=1'
