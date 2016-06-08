@@ -7,7 +7,7 @@ var text = $('#formdata').val();
 console.log("text",text)
 
   $.ajax({
-             url:"https://pixabay.com/api/?key=1888689-32b6c3d1fa4ab52b9ed34d259&q=Black+Flowers&image_type=photo",
+             url:'https://pixabay.com/api/?key=1888689-32b6c3d1fa4ab52b9ed34d259&q= '+ text +' &image_type=photo',
              dataType : "jsonp",
 
              success: function(data){
