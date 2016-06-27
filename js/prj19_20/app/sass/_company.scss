@@ -1,0 +1,12 @@
+.company {
+  background-color: #fff;
+}
+.company_wrapper {
+  width: $width;
+  margin: 0 auto;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 60px 18px;
+  }
+}

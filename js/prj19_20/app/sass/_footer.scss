@@ -1,0 +1,44 @@
+footer {
+  background-color: $grey;
+    }
+.footer_wrapper {
+  width: $width;
+  margin: 0 auto;
+
+  .socials,.links,.blog,.about {
+    width: 25%;
+    float: left;
+    padding-bottom: 70px;
+
+    h4 {
+      color: white;
+      font-weight: 500;
+      font-size:16px;
+      display: block;
+      margin: 60px 0 40px 0;
+    }
+
+    ul {
+      padding-right: 40px;
+    }
+
+    li {
+      font-family: Arial;
+      font-size: 12px;
+      list-style: none;
+      display: block;
+      border-bottom: 1px solid #393c40;
+      display: block;
+      line-height: 36px;
+    }
+    li:last-child {
+      border: none;
+    }
+    a {
+      color:#828385;
+    }
+    a:hover {
+      color:$blue;
+    }
+  }
+}

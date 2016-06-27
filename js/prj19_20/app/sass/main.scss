@@ -1,0 +1,114 @@
+@import "../fonts/genericons/genericons.css" all;
+@import "_variables";
+@import "_mixins";
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;}
+a {
+  text-decoration: none;
+}
+ body {
+   font-family: $font-stacks;
+   color: #434343;
+   background-color: #F7F7F7;}
+ header {
+   width: $width;
+   margin: 20px auto;
+   overflow: hidden;
+   .label {
+     float: left;
+     height: 36px;
+     background-image: url(../img/first_label.png);
+     background-repeat: no-repeat;
+     .label_name {
+       padding-left: 42px;
+       font-size: 30px;
+       font-weight: 500;
+       line-height: 22px;
+       margin-bottom: 4px;}
+     .label_light {
+       padding-left: 44px;
+       font-size: 12px;
+       font-weight: 300;
+       color:#8f8f8f;
+       letter-spacing: 3.5px;
+       line-height: 12px;}
+   }
+   .networks {
+     float: right;
+     ul {
+       margin:8px;}
+     li {
+       list-style: none;
+       display: inline-block;
+       a{
+         margin-left: 5px;}
+     }
+     .genericon {
+       color: #ccc;
+       font-size: 18px;}
+     .genericon:hover {
+       color: $blue;}
+    }
+ }
+ @import "_nav";
+
+ .main_photo {
+   width: $width;
+   margin: 20px auto;
+   color: white;
+   position: relative;
+   font-weight: 500;
+   font-size: 54px;
+     .build {
+     position: absolute;
+     bottom:35px;
+     left: 35px;
+     width: 300px;
+     height: 200px;
+     background: url(../img/rectangle.png) no-repeat;
+     p {
+       text-indent: 30px;}
+     .orange {
+       color: $orange;}
+   }
+ }
+.articles_main_wrapper {
+  width: $width;
+  margin: 20px auto;
+  overflow: hidden;
+  .articles {
+    width: 380px;
+    display: inline-block;
+    .articles_number{
+    @include number_style; }
+    .articles_wrapper {
+      float: right;
+      width: 240px;
+      padding-top: 25px;
+      h3 {
+        font-size: 20px;
+        padding: 18px 5px;
+      }
+      .articles_text {
+      @include article_text;}
+      .articles_links{
+      @include links;}
+      .articles_links:hover {
+      @include links_hover;}
+    }
+  }
+}
+@import "_pictures";
+@import "_newsbanners";
+@import "_accordion";
+@import "_company";
+@import "_footer";
+@import "_copyright";
