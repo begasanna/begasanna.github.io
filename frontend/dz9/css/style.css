@@ -137,18 +137,18 @@ nav {
   padding-right: 5px;
       }
 .pager_link {
+  background-color: #000;
   cursor: pointer;
   display: block;
   width: 18px;
   height: 18px;
-  background-color: rgba(0, 0, 0, 0.2);
-  background-color: #000;
   filter: alpha(Opacity=40);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   behavior: url(css/border-radius.htc);
+  background-color: rgba(0, 0, 0, 0.2);
   }
 .pager_link.active{
   box-sizing: border-box;
