@@ -55,24 +55,49 @@ header::after {
   float: right;
   margin-right: 39px;
   margin-top: 8px;
-}
+  }
 .genericon.genericon-expand,
 .genericon.genericon-next {
   margin: 0 11px;
   color: #0069EF;
 }
-.nav li {
+.nav_list{
   display: inline-block;
 }
-.nav li a {
+.nav_list a {
   padding: 6px 0 6px 11px;
   border: 1px solid #666;
   color: #666;
   font-weight: bold;
+  font-size: 12px;
 }
 .nav li a:hover{
   color: #0069EF;
   border-color: #0069EF;
+}
+.sub_nav {
+  display: none;
+  position: absolute;
+  top:23px;
+  width: 128px;
+  border:1px solid #666;
+  border-top: none;
+  background-color: #fff;
+  z-index: 2;
+}
+.sub_nav li {
+  border: none;
+  list-style: disc;
+  list-style-position: inside;
+}
+.sub_nav a {
+  display: block;
+  margin: 5px 0;
+  padding: 0 8px;
+  border: none;
+}
+.nav_list.sub:hover .sub_nav{
+  display: block;
 }
 
 .service_item {
@@ -173,7 +198,62 @@ header::after {
 .exch_list.pm {
   position: relative;
   }
-.exch_list.pm:before{
+.exch_list.pm:hover .exch_list_menu {*/
+  display: block;
+  opacity: 1;
+  left:-103px;
+}
+.exch_list_menu {
+  opacity:0;
+  -webkit-transition:0.25s linear opacity;
+  /*display: none;*/
+  position: absolute;
+  width: 450px;
+  height: 160px;
+  background-color: #fff;
+  z-index: 2;
+  border: 1px solid #0069EF;
+  left: -10003px;
+  top: 44px;
+}
+.exch_list_menu::before {
+  content: '';
+  top:-91px;
+  left:105px;
+  position: absolute;
+  width: 70px;
+  height: 90px;
+  background-image:url('../img/pm.png');
+  background-repeat: no-repeat;
+  background-position: 7px 42px;
+  background-color: #fff;
+  border: 1px solid #0069EF;
+  border-bottom: none;
+}
+.exch_list_menu table {
+    width: 400px;
+    height: 140px;
+    margin: 10px auto;
+    border: 1px solid #fff;
+    text-align: left;
+    }
+.exch_list_menu table a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #202020;
+  width: 130px;
+}
+.exch_list_menu table a img {
+  padding-right: 10px;
+}
+.exch_list_menu th{
+    border: 1px dotted black; /* Граница вокруг ячеек */
+   }
+.exch_list_menu td {
+    border: 1px dotted black; /* Граница вокруг ячеек */
+   }
+
+li.exch_list.pm::before {
   content: '';
   position: absolute;
   top: -3px;

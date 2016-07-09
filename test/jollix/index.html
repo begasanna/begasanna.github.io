@@ -15,10 +15,18 @@
 
         <div class="nav">
           <ul>
-            <li><a href="#">RU<span class="genericon genericon-expand"></span></a></li>
-            <li><a href="#">ПОДДЕРЖКА<span class="genericon genericon-expand"></span></a></li>
-            <li><a href="#"><span class="genericon genericon-cog"></span><span class="genericon genericon-expand"></span></a></li>
-            <li><a href="#">ВЫХОД<span class="genericon genericon-next"></span></a></li>
+            <li class="nav_list"><a href="#">RU<span class="genericon genericon-expand"></span></a></li>
+            <li class="nav_list sub" style="position:relative;">
+              <ul class="sub_nav">
+                <li><a href="#">ВОПРОС/ОТВЕТ</a></li>
+                <li><a href="#">ИНСТРУКЦИИ</a></li>
+                <li><a href="#">ТИКЕТЫ</a></li>
+              </ul>
+              <a href="#">ПОДДЕРЖКА<span class="genericon genericon-expand"></span></a></li>
+
+
+            <li class="nav_list"><a href="#"><span class="genericon genericon-cog"></span><span class="genericon genericon-expand"></span></a></li>
+            <li class="nav_list"><a href="#">ВЫХОД<span class="genericon genericon-next"></span></a></li>
           </ul>
         </div>
       </header>
@@ -47,8 +55,38 @@
             <p>отдаете</p>
               <ul>
                 <li class="exch_list">0,00.........</li>
-                <li class="exch_list pm" style="text-align:right"><a href="#"><span class="genericon genericon-expand"></a></li>
-                <li class="exch_list"><a href="#">USD<span class="genericon genericon-expand"></a></li>
+                <li class="exch_list pm" style="text-align:right"><a class="open_table" href="#">
+                  <span class="genericon genericon-expand"></span></a>
+                  <div class="exch_list_menu">
+
+                    <table >
+                      <tbody>
+                        <tr>
+                          <td><a href="#"><img src="img/svg/pm_l.png" alt="" />Perfect Money</a></td>
+                          <td><a href="#"><img src="img/svg/yan.png" alt="" />Яндекс.Деньги</a></td>
+                          <td><a href="#"><img src="img/svg/pay.png" alt="" />Paymer</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#"><img src="img/svg/e2.png" alt="" />BTC-e</a></td>
+                          <td><a href="#"><img src="img/svg/qiwi.png" alt="" />Qiwi</a></td>
+                          <td><a href="#"><img src="img/svg/priv.png" alt="" />Приват 24</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#"><img src="img/svg/ok.png" alt="" />Okpay</a></td>
+                          <td><a href="#"><img src="img/svg/e.png" alt="" />Egopay</a></td>
+                          <td><a href="#"><img src="img/svg/z.png" alt="" />Z-payement</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#"><img src="img/svg/ii.png" alt="" />W1</a></td>
+                          <td><a href="#"><img src="img/svg/visa.png" alt="" />Visa/MC</a></td>
+                          <td><a href="#"><img src="img/svg/any.png" alt="" />Anycash</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  </li>
+                <li class="exch_list"><a href="#">USD<span class="genericon genericon-expand"></span></a></li>
               </ul>
           </div>
           <div class="exch_item triang">
