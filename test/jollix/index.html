@@ -2,18 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jollix</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <div class="logo"><span class="icon-lit_logo"></span></div>
-        <div class="logo_name"><span class="icon-logo_text"></span></div>
+        <div class="mobile_menu mobile"><a href="#"><span class="genericon genericon-menu"></span></a></div>
+        <div class="mobile_exit mobile"><a href="#">ВХОД<span class="genericon genericon-next"></span></a></div>
+        <div class="mobile_logo"><img src="img/svg/any_cash.svg" width=140px alt="logo" /></div>
 
-        <div class="nav">
+
+        <div class="nav no-mobile">
           <ul>
             <li class="nav_list"><a href="#">RU<span class="genericon genericon-expand"></span></a></li>
             <li class="nav_list sub" style="position:relative;">
@@ -31,7 +35,7 @@
         </div>
       </header>
 
-      <div class="service">
+      <div class="service no-mobile">
         <div class="service_item">
           <a href="#">
             <img src="img/log1.png" alt="log1"/>
@@ -55,37 +59,52 @@
             <p>отдаете</p>
               <ul>
                 <li class="exch_list">0,00.........</li>
-                <li class="exch_list pm" style="text-align:right"><a class="open_table" href="#">
+                <li class="exch_list pm" style="text-align:right"><a href="#">
                   <span class="genericon genericon-expand"></span></a>
-                  <div class="exch_list_menu">
 
-                    <table >
+                  <div class="exch_list_menu desktop">
+                    <table class="no-mobile">
                       <tbody>
                         <tr>
                           <td><a href="#"><img src="img/svg/pm_l.png" alt="" />Perfect Money</a></td>
                           <td><a href="#"><img src="img/svg/yan.png" alt="" />Яндекс.Деньги</a></td>
                           <td><a href="#"><img src="img/svg/pay.png" alt="" />Paymer</a></td>
                         </tr>
-                        <tr>
+                        <tr >
                           <td><a href="#"><img src="img/svg/e2.png" alt="" />BTC-e</a></td>
                           <td><a href="#"><img src="img/svg/qiwi.png" alt="" />Qiwi</a></td>
                           <td><a href="#"><img src="img/svg/priv.png" alt="" />Приват 24</a></td>
                         </tr>
-                        <tr>
+                        <tr >
                           <td><a href="#"><img src="img/svg/ok.png" alt="" />Okpay</a></td>
                           <td><a href="#"><img src="img/svg/e.png" alt="" />Egopay</a></td>
                           <td><a href="#"><img src="img/svg/z.png" alt="" />Z-payement</a></td>
                         </tr>
-                        <tr>
+                        <tr >
                           <td><a href="#"><img src="img/svg/ii.png" alt="" />W1</a></td>
                           <td><a href="#"><img src="img/svg/visa.png" alt="" />Visa/MC</a></td>
                           <td><a href="#"><img src="img/svg/any.png" alt="" />Anycash</a></td>
                         </tr>
                       </tbody>
                     </table>
+
+                    <table class="mobile">
+                      <tbody>
+                        <tr class="mobile">
+                          <td><a href="#"><img src="img/svg/e2.png" alt="" /><p>BTC-e</p></a></td>
+                          <td><a href="#"><img src="img/svg/pm_l.png" alt="" /><p>Perfect Money</p></a></td>
+                          <td><a href="#"><img src="img/svg/pay.png" alt="" /><p>Paymer</p></a></td>
+                        </tr>
+                        <tr class="mobile">
+                          <td><a href="#"><img src="img/svg/ok.png" alt="" /><p>Okpay</p></a></td>
+                          <td><a href="#"><img src="img/svg/z.png" alt="" /><p>Z-payement</p></a></td>
+                          <td><a href="#"><img src="img/svg/priv.png" alt="" /><p>Приват 24</p></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
 
-                  </li>
+                </li>
                 <li class="exch_list"><a href="#">USD<span class="genericon genericon-expand"></span></a></li>
               </ul>
           </div>
@@ -106,12 +125,12 @@
       </div>
 
       <div class="exch_detail">
-          <div class="detail1"><a href="#">Приват24</a>доступно для обмена <span>114.06</span><span>UAH</span></div>
-          <div class="detail2">Мне нужно больше - сообщите когда появится<a href="#"></a></div>
+          <div class="detail1"><a href="#"><span class="no-mobile">Приват 24</span><p class="mobile">Приват 24</p></a><span class="no-mobile">доступно для обмена <span>114.06</span></span><p class="mobile">доступно для обмена <span>114.06</span></p>UAH</div>
+          <div class="detail2"><a href="#">Мне нужно больше - сообщите когда появится</a></div>
       </div>
     </div>
 
-    <div class="titles">
+    <div class="titles no-mobile">
       <div class="title1"><a href="#"><span class="icon-strelki"></span><span>КУРСЫ ВАЛЮТ</span></a></div>
       <div class="title2"><a href="#"><span class="icon-contact"></span><span>ПАРТНЕРСТВО</span></a></div>
       <div class="title3"><a href="#"><span class="icon-star"></span><span>БОНУСЫ</span></a></div>
@@ -120,25 +139,28 @@
     <div class="articles">
       <div class="articles_item">
         <h3>НОВОСТИ ПРОЕКТА</h3>
-        <img class="articles_img" src="img/img1.jpg" alt="img1" />
+        <img class="articles_img no-mobile" src="img/img1.jpg" alt="img1" />
+        <img class="articles_img mobile" src="img/img_1_mob.jpg" alt="img1" />
         <p>Вдруг это какая-нибудь новая разновидность баобаба?  Но кустик быстро перестал тянуться ввысь,  и на нем появился бутон.
            Маленький принц никогда еще не видал  таких еще не видал  таких  огромных  бутонов.</p>
-        <p class="articles_more"><a href="#">ДАЛЕЕ <img src="img/more.png" alt="more"/></a></p>
-          <a class="articles_prev" href="#"><img src="img/a_left.png" alt="left"/></a>
-          <a class="articles_next" href="#"><img src="img/a_right.png" alt="right"/></a>
+        <p class="articles_more"><a href="#">ДАЛЕЕ <span class="icon-more"></span>
+        </a></p>
+          <a class="articles_prev" href="#"><img class="no-mobile" src="img/a_left.png" alt="left"/><img class="mobile" src="img/svg/left.svg" width=40px alt="left"/></a>
+          <a class="articles_next" href="#"><img class="no-mobile" src="img/a_right.png" alt="right"/><img class="mobile" src="img/svg/right.svg" width=40px alt="right"/></a>
       </div>
-      <div class="articles_item">
+      <div class="articles_item last_article">
         <h3>БАЗА ЗНАНИЙ</h3>
-        <img class="articles_img" src="img/img2.jpg" alt="img1" />
+        <img class="articles_img no-mobile" src="img/img2.jpg" alt="img2" />
+        <img class="articles_img mobile" src="img/img_2_mob.jpg" alt="img2" />
         <p>Вдруг это какая-нибудь новая разновидность баобаба?  Но кустик быстро перестал тянуться ввысь,  и на нем появился бутон.
            Маленький принц никогда еще не видал  таких еще не видал  таких  огромных  бутонов.</p>
-        <p class="articles_more"><a href="#">ДАЛЕЕ <img src="img/more.png" alt="more"/></a></p>
-          <a class="articles_prev" href="#"><img src="img/a_left.png" alt="left"/></a>
-          <a class="articles_next" href="#"><img src="img/a_right.png" alt="right"/></a>
+        <p class="articles_more"><a href="#">ДАЛЕЕ <span class="icon-more"></span></a></p>
+        <a class="articles_prev" href="#"><img class="no-mobile" src="img/a_left.png" alt="left"/><img class="mobile" src="img/svg/left.svg" width=40px alt="left"/></a>
+        <a class="articles_next" href="#"><img class="no-mobile" src="img/a_right.png" alt="right"/><img class="mobile" src="img/svg/right.svg" width=40px alt="right"/></a>
       </div>
     </div>
 
-    <div class="ways">
+    <div class="ways no-mobile">
       <div class="ways_name">НАШИ НАПРАВЛЕНИЯ ОБМЕНА С</div>
       <div class="ways_box">
         <a class="perf" href="#">Perfect Money</a>
@@ -158,10 +180,29 @@
       </div>
     </div>
 
+    <div class="ways_mobile mobile">
+      <ul>
+        <li class="open_menu">НАШИ НАПРАВЛЕНИЯ ОБМЕНА <span class="icon-more"></span>
+          <ul class="ways_sub">
+            <li><a href="#">Perfect Money</a></li>
+            <li><a href="#">OK PAY</a></li>
+            <li><a href="#">Приват 24</a></li>
+            <li><a href="#">Яндекс.Деньги</a></li>
+            <li><a href="#">Wallet 1</a></li>
+            <li><a href="#">EXMO</a></li>
+            <li><a href="#">QIWI</a></li>
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Litecoin</a></li>
+            <li><a href="#">Payeer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
     <div class="text">
       <div class="text_name">КАК ЭТО РАБОТАЕТ</div>
       <div class="text_item">
-        <p>Если вы думаете, что ширина текстовой колонки в вашем блоге это забота вашего веб- дизайнера, то ошибаетесь. Существует оптимальная ширина текстовой колонки блога, и я скажу вам какова она и почему. Но для начала давайте поговорим о том, какова первая задача, стоящая перед вашим веб-сайтом. Первейшая задача состоит в том, чтобы люди прочли несколько начальных предложений вашего текста.</p>
+        <p class="first_p">Если вы думаете, что ширина текстовой колонки в вашем блоге это забота вашего веб- дизайнера, то ошибаетесь. Существует оптимальная ширина текстовой колонки блога, и я скажу вам какова она и почему. Но для начала давайте поговорим о том, какова первая задача, стоящая перед вашим веб-сайтом. Первейшая задача состоит в том, чтобы люди прочли несколько начальных предложений вашего текста.</p>
         <p>Специалисты – копирайтеры, такие как Джо Шугарман (Joe Sugarman), давно знают об этом интересном аспекте читательского поведения, теперь об этом узнаете и вы.
             Если вам удалось сделать так, чтобы потребитель прочел несколько первых предложений статьи на вашем сайте или вашего коммерческого предложения, он с гораздо большей вероятностью дочитает их до конца.</p>
         <p>Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть всего несколько секунд, чтобы заинтересовать их. Если вам это не удается, вы их теряете.
@@ -178,7 +219,8 @@
 
     <div class="say_us">
       <ul>
-        <li><span>РАССКАЖИ О НАС</span></li>
+        <li class="mobile"><p>ПОДЕЛИТЬСЯ</p></li>
+        <li class="no-mobile"><span>РАССКАЖИ О НАС</span></li>
         <li><a href="#"><span class="icon-vk"></span></a></li>
         <li><a href="#"><span class="icon-fb"></span></a></li>
         <li><a href="#"><span class="icon-twit"></span></a></li>
@@ -186,7 +228,7 @@
       </ul>
     </div>
 
-    <div class="footer">
+    <div class="footer  no-mobile">
       <div class="footer_name">
         <ul>
           <li><span>ПОДДЕРЖКА</span><span class="icon-lit_logo"></span></li>
@@ -246,6 +288,75 @@
         </div>
       </div>
     </div>
+
+    <div class="footer_mobile mobile">
+      <div class="footer_name">
+        <ul>
+          <li>ПОДДЕРЖКА</li>
+          <li><span class="icon-lit_logo"></span></li>
+          <li>УСЛОВИЯ</li>
+        </ul>
+      </div>
+
+      <div class="footer_items">
+        <div class="footer_item ">
+          <ul>
+            <li><a href="#">Тикеты</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Инструкции</a></li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li><a href="#">Безопасность</a></li>
+            <li><a href="#">Соглашение</a></li>
+            <li><a href="#">Гарантии</a></li>
+          </ul></div>
+
+          <div class="footer_name">
+            <ul>
+              <li>ПРОЕКТЫ</li>
+              <li><span class="icon-lit_logo"></span></li>
+              <li>СОЦСЕТИ</li>
+            </ul>
+          </div>
+
+      <div class="footer_item">
+        <ul>
+          <li><a href="#">Платежная система</a></li>
+          <li><a href="#">Обмен валют</a></li>
+          <li><a href="#">Гарант сделок</a></li>
+          <li><a href="#">Оплата сервисов</a></li>
+          <li><a href="#">Депозиты</a></li>
+          </ul>
+      </div>
+      <div class="footer_item">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Vkontakte</a></li>
+          <li><a href="#">Google</a></li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+
+      <div class="footer_name">
+        <ul>
+          <li><span class="icon-lit_logo"></span></li>
+          <li>КОНТАКТЫ</li>
+          <li><span></span><span class="icon-lit_logo"></span></li>
+        </ul>
+      </div>
+
+      <div class="footer_item">
+        <ul>
+          <li><span>office@any.cash</span></li>
+          <li><span>+380504345568</span></li>
+        </ul></div>
+
+      </div>
+    </div>
+
   </div>
 
 

@@ -1,4 +1,8 @@
 @import "../fonts/genericons/genericons.css" all;
+.mobile {
+  display: none;
+}
+
 .wrapper {
   width: 1080px;
   background-color: #fff;
@@ -22,34 +26,8 @@ header::after {
   height: 3px;
   background: url(../img/line-large.png);
   }
-.logo, .logo_name {
-  height: 38px;
+.mobile_logo {
   display: inline-block;
-  }
-.logo{
-  margin-left: 39px;
-  width: 38px;
-  height: 38px;
-  background-color: #0069EF;
-  border-radius: 50%;
-  position: relative;
-}
-.logo .icon-lit_logo:before {
-    content: "\e91c";
-    top: 6px;
-    position: absolute;
-    left: 6px;
-    color: white;
-    font-size: 22px;
-  }
-.icon-logo_text:before {
-  content: "\e94f";
-  position: absolute;
-  top: 10px;
-  }
-.logo_name {
-  color: #0069EF;
-  font-size: 20px;
 }
 .nav {
   float: right;
@@ -99,7 +77,7 @@ header::after {
 .nav_list.sub:hover .sub_nav{
   display: block;
 }
-
+                                  /* div service*/
 .service_item {
   display: inline-block;
   width: 130px;
@@ -130,6 +108,8 @@ header::after {
   height: 3px;
   background: url(../img/line_small.png);
   }
+
+                                      /*div exchange */
 .exchange {
   width: 91%;
   border: 1px solid #6b6b6b;
@@ -198,23 +178,26 @@ header::after {
 .exch_list.pm {
   position: relative;
   }
-.exch_list.pm:hover .exch_list_menu {*/
-  display: block;
-  opacity: 1;
-  left:-103px;
-}
 .exch_list_menu {
   opacity:0;
-  -webkit-transition:0.25s linear opacity;
+  -webkit-transition:0.45s linear opacity;
   /*display: none;*/
   position: absolute;
   width: 450px;
   height: 160px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 6;
   border: 1px solid #0069EF;
   left: -10003px;
   top: 44px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(97,97,97,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(97,97,97,1);
+  box-shadow: 0px 0px 5px 0px rgba(97,97,97,1);
+}
+.exch_list.pm:hover .exch_list_menu.desktop {
+  display: block;
+  opacity: 1;
+  left:-103px;
 }
 .exch_list_menu::before {
   content: '';
@@ -229,7 +212,8 @@ header::after {
   background-color: #fff;
   border: 1px solid #0069EF;
   border-bottom: none;
-}
+  box-shadow: #ccc 2px -2px 3px;
+  }
 .exch_list_menu table {
     width: 400px;
     height: 140px;
@@ -247,12 +231,11 @@ header::after {
   padding-right: 10px;
 }
 .exch_list_menu th{
-    border: 1px dotted black; /* Граница вокруг ячеек */
+  border: 1px dotted black; /* Граница вокруг ячеек */
    }
-.exch_list_menu td {
-    border: 1px dotted black; /* Граница вокруг ячеек */
-   }
-
+.exch_list_menu td{
+  border: 1px dotted black;
+}
 li.exch_list.pm::before {
   content: '';
   position: absolute;
@@ -327,6 +310,7 @@ li.exch_list.pm::before {
   background: url('../img/conv.png')no-repeat;
   cursor: pointer;
   }
+                                                       /*TITLES*/
 .titles {
   width: 960px;
   margin: 0 auto;
@@ -366,9 +350,9 @@ span.icon-strelki,span.icon-contact,span.icon-star{
   font-size: 20px;
   color: #0069EF;
   }
+                                                           /*DIV ARTICLES*/
 .articles {
-  width: 1020px;
-  margin: 0 auto;
+  margin: 0 30px;
 }
 .articles h3 {
  text-align: center;
@@ -377,7 +361,7 @@ span.icon-strelki,span.icon-contact,span.icon-star{
   }
 .articles_item {
   display: inline-block;
-  width: 442px;
+  width: 43.5%;
   border: 1px dashed #8b8b8b;
   position: relative;
   margin: 30px;
@@ -393,6 +377,14 @@ span.icon-strelki,span.icon-contact,span.icon-star{
 .articles_more {
   text-align: right;
   }
+.articles_more a{
+  color: #8d8d8d;
+  font-size: 16px;
+}
+.icon-more:before {
+    content: "\e94c";
+    font-size: 14px;
+  }
 .articles_prev, .articles_next {
   position: absolute;
   top:50%;
@@ -403,6 +395,7 @@ span.icon-strelki,span.icon-contact,span.icon-star{
 .articles_next{
   right:-12px;
     }
+                                                           /*div Ways*/
 .ways {
   width: 985px;
   height: 396px;
@@ -454,10 +447,9 @@ span.icon-strelki,span.icon-contact,span.icon-star{
 .priv:hover   {color:#008F29;}
 .ok:hover     {color:#FF9000;}
 .web:hover    {color:#006AB8;}
-
+                                                            /*div Text*/
 .text {
-  width: 985px;
-  margin: 50px auto;
+  margin: 50px 45px;
   border: 1px solid #8b8b8b;
   border-radius: 6px;
   position: relative;
@@ -475,11 +467,12 @@ span.icon-strelki,span.icon-contact,span.icon-star{
 .text_item {
   font-size: 14px;
   font-weight: lighter;
-  padding: 30px;
-  width: 430px;
+  padding: 3%;
+  width: 43.5%;
   text-align: justify;
   display: inline-block;
 }
+                                           /*Расскажите о нас*/
 .say_us {
   text-align: center;
   margin-bottom: 50px;
@@ -489,6 +482,10 @@ span.icon-strelki,span.icon-contact,span.icon-star{
   display: inline-block;
   padding: 0 6px;
 }
+.say_us li.mobile {
+  display: none;
+}
+
 .say_us li a{
   color: #666;
   font-size: 14px;
@@ -497,7 +494,7 @@ span.icon-strelki,span.icon-contact,span.icon-star{
   color:#52A7F6;
 }
 
-/*Футер*/
+                                                     /*Футер*/
 .footer {
   margin: 0 60px;
 }
@@ -557,7 +554,7 @@ span.icon-strelki,span.icon-contact,span.icon-star{
 }
 
 
-/*Градиенты на бордерах*/
+                                   /*Градиенты на бордерах*/
 
 .exchange::before,
 .exchange::after,
@@ -566,7 +563,7 @@ span.icon-strelki,span.icon-contact,span.icon-star{
 .text::before,
 .text::after {
   content: '';
-  height: 200px;
+  height: 100%;
   width: 3px;
   position: absolute;
   background: -moz-linear-gradient(top, rgba(255,255,255,0.42) 0%, rgba(255,255,255,0.64) 14%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.71) 86%, rgba(255,255,255,0.43) 100%); /* FF3.6-15 */
