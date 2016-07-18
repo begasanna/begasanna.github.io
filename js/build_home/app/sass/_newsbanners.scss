@@ -1,0 +1,54 @@
+.newsbanner {
+  width: $width;
+  margin: 0 auto 40px auto;
+  }
+.news,.banners {
+  width: 50%;
+  float: left;
+  h2 {
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+  .news_item {
+    margin-bottom: 30px;
+  }
+}
+.news_img{
+  width: 150px;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+
+  .news_img_date {
+    position: absolute;
+    top:10px;
+    left:-20px;
+  .news_img_date_orange {
+   @include date_label;
+   font-size: 18px;
+   background-color: $orange;
+  }
+  .news_img_date_blue {
+   @include date_label;
+   background-color: $blue;
+  }
+ }
+}
+.comments {
+  @include article_text;
+}
+.blue {
+  color: $blue;
+}
+.news_note_name {
+  color:$grey;
+  font-weight: 500;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.news_note_text{
+  margin-top: 10px;
+  @include article_text;
+  padding-right: 30px;
+}

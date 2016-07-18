@@ -1,0 +1,76 @@
+.accordion {
+  display: block;
+	width: 560px;
+
+  input {
+  display: none;
+  }
+  label {
+    padding: 5px 50px;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    line-height: 33px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    margin-top: 5px;
+  }
+
+  input:checked + label,
+  input:checked + label:hover{
+  	background: $orange;
+  	color: white;
+  	}
+  article {
+    margin-top: -1px;
+    border: none;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    @include acc_transit;
+    @include article_text;
+    padding: 0;
+
+    p {
+      margin: 30px 20px auto 42px;
+    }
+  }
+  label:after {
+  content: '+';
+  position: absolute;
+  left:16px;
+  top: 5px;
+  }
+  label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  border-right: 2px solid #e8e8e8;
+  left: 40px;
+  height: 40px;
+}
+
+  input:checked + label:after{
+	content: '-';
+	position: absolute;
+	left:18px;
+	top: 5px;
+	}
+  input:checked + label:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    border-right: 1px solid #f6c53d;
+    left: 40px;
+    height: 40px;
+  }
+  input:checked ~ article{
+  height: 160px;
+	@include acc_transit;
+	}
+}

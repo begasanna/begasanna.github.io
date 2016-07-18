@@ -1,0 +1,86 @@
+@mixin number_style {
+    float: left;
+    font-size: 90px;
+    color: #ccc;
+    // line-height: 90px;
+    }
+@mixin article_text {
+  font-family: 'Arial';
+  line-height: 18px;
+  font-size: 12px;
+  color: #8a8a8a;
+  padding-right: 10px;
+  padding-bottom: 16px;
+}
+@mixin links {
+  color: $grey;
+  font-size: 12px;
+  text-decoration: none;
+  .genericon-next {
+    color: $blue;
+    vertical-align: bottom;
+    padding-left: 8px;
+  }
+}
+@mixin links_hover {
+  color: $blue;
+  .genericon-next {
+    color: $grey;}
+}
+@mixin overlay_eff {
+  .overlay{
+    position: absolute;
+    width: 260px;
+    top: 0;
+    left: 0;
+    border: 130px solid rgba(51,153,255,0.5);
+    box-sizing: border-box;
+    height: 260px;
+   opacity: 0;
+   overflow:visible;
+   transition: all 0.4s ease-in-out;
+   cursor: pointer;
+  }
+  .overlay a.pictures_links{
+   position:absolute;
+   top:-10px;
+   left:-10px;
+   opacity: 0;
+   transition: opacity 0.7s 0s ease-in-out;
+}
+.overlay:hover {
+   opacity: 1;
+   border:130px solid rgba(51,153,255,0.7);
+}
+.overlay:hover a.pictures_links{
+   opacity:1;
+   transition-delay: 0.3s;
+   position: absolute;
+   top:-10px;
+   left: -10px;
+}
+}
+@mixin plus {
+  a span.genericon.genericon-close-alt {
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  transform: rotate(45deg);
+}
+}
+@mixin date_label {
+  text-align: center;
+  font-weight: 500;
+  line-height: 34px;
+  color: white;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+@mixin acc_transit {
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  -ms-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}

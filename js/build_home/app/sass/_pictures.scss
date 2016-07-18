@@ -1,0 +1,44 @@
+.pictures {
+  background-color: $grey;
+  width: 100%;
+
+  .pictures_wrapper {
+    width: $width;
+    margin: 0 auto;
+    overflow: hidden;
+
+    h2 {
+      color:white;
+      font-weight: 500;
+      font-size: 24px;
+      padding: 50px 0;}
+
+    .pictures_item{
+      float: left;
+      width: 260px;
+      position: relative;
+      margin-right: 40px;
+      @include overlay_eff;
+      @include plus;
+
+      a.pictures_name{
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        text-decoration: none;
+        }
+      a:hover {
+        color: $orange;
+      }
+    }
+    .pictures_item.last{
+      margin-right:0;}
+    .pictures_links{
+      display: block;
+    }
+  }
+}
