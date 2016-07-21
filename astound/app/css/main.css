@@ -87,18 +87,29 @@ figcaption a {
 .content-price.sales {
   color: #ce2c52; }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .content {
     max-width: 720px; }
   .content-item {
     display: inline-block;
-    padding: 20px; }
+    padding: 14px; }
   figure {
     width: 300px; }
   .content-name {
     font-size: 20px; }
   .content-price {
     font-size: 22px; } }
+
+@media screen and (min-width: 1024px) {
+  .content {
+    max-width: 960px; }
+  figure {
+    width: 265px; }
+  .content-name {
+    font-size: 12px; } }
+
+.no-mobile {
+  display: none; }
 
 .popup {
   background-color: #fff;
@@ -108,9 +119,7 @@ figcaption a {
 
 #modal_popup {
   position: absolute;
-  z-index: 10;
-  display: none;
-  opacity: 0; }
+  z-index: 10; }
 
 .popup-photo {
   width: 100%; }
@@ -218,14 +227,20 @@ figcaption a {
   display: none; }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .no-mobile {
+    display: block; }
   .popup {
-    width: 738px;
-    max-width: 738px; }
+    width: 640px;
+    max-width: 640px;
+    text-align: left; }
+  #modal_popup {
+    top: 37%; }
   .popup-name {
-    width: auto; }
+    width: auto;
+    padding-top: 26px;
+    padding-left: 30px; }
   .popup-photo {
     width: 400px;
-    float: left;
     padding-left: 30px; }
   .popup-item {
     float: none; }
@@ -248,6 +263,43 @@ figcaption a {
     border-radius: 100%; }
   .popup-close a img {
     width: 20px; }
-  .popup-name {
-    padding-top: 26px;
-    padding-left: 30px; } }
+  .popup-wrap {
+    display: block;
+    position: absolute;
+    top: 72px;
+    right: 54px; }
+  .popup-item {
+    display: block;
+    float: none;
+    padding-left: 0;
+    padding-bottom: 10px; }
+  .popup-ratio {
+    float: none;
+    display: block; }
+  #icons {
+    position: absolute;
+    top: 80px;
+    left: 40px; }
+  #icons a {
+    display: block;
+    margin: 5px; }
+  .popup-sizes-wrap {
+    width: 165px;
+    position: absolute;
+    top: 145px;
+    right: 23px; }
+  .popup-sizes {
+    padding: 10px 0 20px 0; }
+  .popup-last-price {
+    display: block; }
+  .popup-button a {
+    width: auto; }
+  .popup-select {
+    padding-top: 30px; }
+  .popup-sizes li a {
+    margin: 5px 5px 0 0; }
+  .popup-text {
+    font-size: 12px; }
+  .popup-text-name {
+    font-size: 22px;
+    font-weight: bold; } }

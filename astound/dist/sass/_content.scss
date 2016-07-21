@@ -48,14 +48,13 @@ figcaption a{
 }
 
 @media screen
-and (min-width: 768px)
-and (max-width:1024px) {
-  .content {
-    max-width: 720px;
+and (min-width: 768px){
+.content {
+  max-width: 720px;
   }
 .content-item{
   display: inline-block;
-  padding: 20px;
+  padding: 14px;
 }
 figure {
   width: 300px;
@@ -65,5 +64,17 @@ figure {
 }
 .content-price {
   font-size: 22px;
+}
+}
+@media screen
+and (min-width: 1024px) {
+  .content {
+  max-width: 960px;
+}
+figure {
+  width: 265px;
+}
+.content-name {
+    font-size:12px;
 }
 }
