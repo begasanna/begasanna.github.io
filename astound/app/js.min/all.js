@@ -1,0 +1,1 @@
+$(document).ready(function(){$("a#pop-up").click(function(o){o.preventDefault(),$("#overlay").fadeIn(400,function(){$("#modal_popup").css("display","block").animate({opacity:1,top:"30%"},200)})}),$("#close, #overlay").click(function(){$("#modal_popup").animate({opacity:0,top:"45%"},200,function(){$(this).css("display","none"),$("#overlay").fadeOut(400)})})});

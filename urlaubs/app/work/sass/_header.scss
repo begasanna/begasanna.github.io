@@ -1,0 +1,56 @@
+.wrapper {
+  width: 100%;
+//   margin: 0 auto;
+  // max-width: 320px;
+  overflow-x: hidden;
+
+}
+header {
+  // background: url('../../dist/img/mob/bcg_header.jpg') center no-repeat;
+  // background-repeat: no-repeat;
+  background-color: #000;
+  background: url('../../dist/img/tab/bcg1600.jpg') center no-repeat;
+
+  .logo {
+    padding-bottom: 136px;
+    text-align: center;
+  }
+}
+.login_item {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 120px;
+  width: 84px;
+}
+.login_link {
+  line-height: 30px;
+  color: white;
+}
+.login_item:last-child {
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.logo_title,{
+  font-weight: bold;
+  font-size: 20px;
+}
+p.logo_dreams,p.logo_dreams p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.logo_find_wrapper {
+  display: block;
+  margin: 20px auto;
+}
+.logo_find {
+  font-family: $roboto;
+  font-weight:100;
+  font-size: 18px;
+}
+.logo_search_link {
+  @include circle_link;
+  color: white;
+  background-color: $red;
+}

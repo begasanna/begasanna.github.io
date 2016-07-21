@@ -1,0 +1,73 @@
+.masonry_img {
+  text-align: center;
+  border-bottom: 4px solid $red;
+
+  .logo_search_link {
+    margin-bottom: 40px;
+  }
+}
+.grid-item{
+  position: relative;
+  width:100%;
+}
+.masonry_title {
+  @include title_style;
+}
+.grid-item::after{
+  content: '';
+  color: #fff;
+  position: absolute;
+  width:100%;
+  top:40%;
+  left: 0;
+  font-size: 22px;
+  text-align: center;
+}
+.grid-item.sport::after{
+  content: 'Sport and Activity';
+}
+.grid-item.yoga::after{
+  content: 'Wellnes and Health';
+}
+.grid-item.extreme::after{
+  content: 'Extreme Sports and Expeditions';
+}
+.grid-item.games::after{
+  content: 'Games';
+}
+.grid-item.cultur::after{
+  content: 'Culture and Education';
+}
+.grid-item.relax::after{
+  content: 'Relaxation';
+}
+.grid-item.travel::after{
+  content: 'Travelling';
+}
+.question {
+  font-family: $roboto;
+  font-size: 18px;
+  font-weight: 100;
+  color: #333;
+  margin: 10px 0;
+}
+.masonry_interes {
+  width: 280px;
+  height: 40px;
+  font-family: $roboto;
+  text-indent: 20px;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  margin: 10px 0;
+}
+.masonry_interes:focus {
+  outline-color: $red;
+    outline-style: auto;
+    outline-width: 0px;
+  border-color: $red;
+
+}

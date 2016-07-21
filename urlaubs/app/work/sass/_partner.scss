@@ -1,0 +1,39 @@
+.partner {
+  text-align: center;
+  color: black;
+  .partner_title {
+    @include title_style;
+  }
+  .partner_item {
+    margin-bottom: 25px;
+  }
+}
+.partner_img {
+  position: relative;
+  width: 140px;
+  margin: 0 auto;
+}
+img.some {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.partner_name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 12px auto;
+}
+.partner_bio {
+font-family: $roboto;
+font-weight: lighter;
+font-size: 14px;
+margin: 10px 54px;
+color: #666;
+line-height: 1.15;
+}
+.partner_search_link {
+  @include circle_link;
+  color: $red;
+  background-color:white;
+  border: 2px solid $red;
+}

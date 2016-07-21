@@ -1,0 +1,12 @@
+@import "variables";
+@import "mixins";
+body {
+  border-color: #fff;
+  font-family: $montserrat;
+  color: white;
+}
+@import "_header";
+@import "_content";
+@import "_partner";
+@import "_masonry";
+@import "_footer";

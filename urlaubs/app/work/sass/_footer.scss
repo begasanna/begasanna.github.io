@@ -1,0 +1,35 @@
+footer {
+  text-align: center;
+  p.logo_title {
+    color: $red;
+    font-size: 16px;
+    display: block;
+    padding: 20px 0;
+  }
+
+  p.p_black {
+    color: #333;
+    font-size: 14px;
+    font-family: $montserrat;
+  }
+
+  p.copy {
+    color: #ccc;
+    font-size: 10px;
+    display: block;
+    padding: 20px 0 16px 0;
+  }
+
+  a.areto img{
+    width: 110px;
+  }
+}
+.footer_list {
+  display: inline-block;
+  padding: 10px 5px 20px 5px;
+
+}
+.footer_list a {
+  font: lighter 14px $roboto;
+  color: #666;
+}

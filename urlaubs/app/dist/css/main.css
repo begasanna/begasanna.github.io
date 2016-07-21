@@ -1,0 +1,282 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,300italic,400italic,500italic,700italic)';
+body {
+  border-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: white; }
+
+.wrapper {
+  width: 100%;
+  overflow-x: hidden; }
+
+header {
+  background-color: #000;
+  background: url("../../dist/img/tab/bcg1600.jpg") center no-repeat; }
+  header .logo {
+    padding-bottom: 136px;
+    text-align: center; }
+
+.login_item {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 120px;
+  width: 84px; }
+
+.login_link {
+  line-height: 30px;
+  color: white; }
+
+.login_item:last-child {
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 20px; }
+
+.logo_title {
+  font-weight: bold;
+  font-size: 20px; }
+
+p.logo_dreams, p.logo_dreams p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px; }
+
+.logo_find_wrapper {
+  display: block;
+  margin: 20px auto; }
+
+.logo_find {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 18px; }
+
+.logo_search_link {
+  display: block;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 12px;
+  width: 270px;
+  margin: 0 auto;
+  color: white;
+  background-color: #ff4e50; }
+
+.content {
+  text-align: center; }
+  .content .content_name {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin: 20px 10px; }
+
+.step_1 {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  background-image: url(../img/mob/step1_l.jpg); }
+
+.step_2 {
+  background-image: url(../img/mob/step2_l.jpg); }
+
+.step_3 {
+  background-image: url(../img/mob/step3_l.jpg); }
+
+.step_1, .step_2, .step_3 {
+  margin: 0 auto;
+  width: 300px;
+  height: 240px;
+  margin-top: 12px;
+  text-align: left;
+  position: relative; }
+  .step_1 .step_red, .step_2 .step_red, .step_3 .step_red {
+    font-weight: 300;
+    font-size: 10px;
+    display: inline-block;
+    margin-top: 60px;
+    background-color: #ff4e50;
+    border-radius: 10px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2; }
+    .step_1 .step_red p, .step_2 .step_red p, .step_3 .step_red p {
+      padding: 5px 15px; }
+  .step_1 .step_title, .step_2 .step_title, .step_3 .step_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 25px;
+    line-height: 30px;
+    position: relative;
+    z-index: 2; }
+  .step_1 .step_text, .step_2 .step_text, .step_3 .step_text {
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    margin: 20px 20px auto 20px;
+    position: relative;
+    z-index: 2; }
+  .step_1 figcaption:before, .step_2 figcaption:before, .step_3 figcaption:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    /* IE6-9 */
+    opacity: 1;
+    border-radius: 5px; }
+  .step_1 figcaption:before, .step_2 figcaption:before, .step_3 figcaption:before {
+    transition: opacity 0.35s; }
+
+.step_1:hover figcaption:before,
+.step_2:hover figcaption:before,
+.step_3:hover figcaption:before {
+  opacity: 0; }
+
+.partner {
+  text-align: center;
+  color: black; }
+  .partner .partner_title {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin: 20px 10px; }
+  .partner .partner_item {
+    margin-bottom: 25px; }
+
+.partner_img {
+  position: relative;
+  width: 140px;
+  margin: 0 auto; }
+
+img.some {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.partner_name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 12px auto; }
+
+.partner_bio {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 10px 54px;
+  color: #666;
+  line-height: 1.15; }
+
+.partner_search_link {
+  display: block;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 12px;
+  width: 270px;
+  margin: 0 auto;
+  color: #ff4e50;
+  background-color: white;
+  border: 2px solid #ff4e50; }
+
+.masonry_img {
+  text-align: center;
+  border-bottom: 4px solid #ff4e50; }
+  .masonry_img .logo_search_link {
+    margin-bottom: 40px; }
+
+.grid-item {
+  position: relative;
+  width: 100%; }
+
+.masonry_title {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  margin: 20px 10px; }
+
+.grid-item::after {
+  content: '';
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 0;
+  font-size: 22px;
+  text-align: center; }
+
+.grid-item.sport::after {
+  content: 'Sport and Activity'; }
+
+.grid-item.yoga::after {
+  content: 'Wellnes and Health'; }
+
+.grid-item.extreme::after {
+  content: 'Extreme Sports and Expeditions'; }
+
+.grid-item.games::after {
+  content: 'Games'; }
+
+.grid-item.cultur::after {
+  content: 'Culture and Education'; }
+
+.grid-item.relax::after {
+  content: 'Relaxation'; }
+
+.grid-item.travel::after {
+  content: 'Travelling'; }
+
+.question {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #333;
+  margin: 10px 0; }
+
+.masonry_interes {
+  width: 280px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  text-indent: 20px;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  margin: 10px 0; }
+
+.masonry_interes:focus {
+  outline-color: #ff4e50;
+  outline-style: auto;
+  outline-width: 0px;
+  border-color: #ff4e50; }
+
+footer {
+  text-align: center; }
+  footer p.logo_title {
+    color: #ff4e50;
+    font-size: 16px;
+    display: block;
+    padding: 20px 0; }
+  footer p.p_black {
+    color: #333;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif; }
+  footer p.copy {
+    color: #ccc;
+    font-size: 10px;
+    display: block;
+    padding: 20px 0 16px 0; }
+  footer a.areto img {
+    width: 110px; }
+
+.footer_list {
+  display: inline-block;
+  padding: 10px 5px 20px 5px; }
+
+.footer_list a {
+  font: lighter 14px "Roboto", sans-serif;
+  color: #666; }

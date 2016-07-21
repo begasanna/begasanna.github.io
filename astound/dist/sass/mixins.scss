@@ -1,0 +1,14 @@
+@mixin icons {
+text-align: center;
+border: 2px solid #2c87ce;
+color: #2c87ce;
+display: inline-block;
+font-size: 20px;
+width: 38px;
+height: 38px;
+line-height: 38px;
+margin: 16px 5px 20px 5px;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+}
