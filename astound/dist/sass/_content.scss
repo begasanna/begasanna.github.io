@@ -1,3 +1,6 @@
+.desktop {
+  display: none;
+}
 .content {
   max-width: 400px;
   margin: 0 auto;
@@ -5,6 +8,7 @@
   }
 .content-item {
   padding-top: 20px;
+  position: relative;
 }
 .content-item:first-child {
   position: relative;
@@ -54,7 +58,7 @@ and (min-width: 768px){
   }
 .content-item{
   display: inline-block;
-  padding: 14px;
+  padding: 16px;
 }
 figure {
   width: 300px;
@@ -65,16 +69,60 @@ figure {
 .content-price {
   font-size: 22px;
 }
+figcaption {
+  height: 60px;
 }
+figcaption a{
+  padding-top: 20px;
+}
+}
+
 @media screen
 and (min-width: 1024px) {
-  .content {
+.no-desktop {
+  display: none;
+}
+.desktop {
+  display: inline-block;
+  color: $black;
+  text-decoration: line-through;
+  }
+.content {
   max-width: 960px;
+}
+.content-item{
+  padding:6px;
 }
 figure {
   width: 265px;
 }
 .content-name {
-    font-size:12px;
+  font-size:12px;
+}
+.content-price p{
+  position: absolute;
+  background-color: $mint;
+  right:6px;
+  bottom: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 6px;
+}
+figcaption {
+  display: none;
+}
+figure:hover figcaption{
+  display: block;
+}
+figcaption {
+  width: 145px;
+  height: 30px;
+  top: 45%;
+  left: 23%;
+  background-color: $mint;
+  }
+figcaption a{
+  color: $black;
+  padding-top: 6px;
 }
 }

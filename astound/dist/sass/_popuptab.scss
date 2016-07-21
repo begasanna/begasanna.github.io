@@ -1,10 +1,8 @@
 @media screen
-and (min-width: 768px)
-and (max-width:1024px) {
+and (min-width: 768px){
   .no-mobile {
     display: block;
   }
-
   .popup{
     width: 640px;
     max-width: 640px;
@@ -41,7 +39,7 @@ and (max-width:1024px) {
   .popup-wrap {
     display: block;
     position: absolute;
-    top: 72px;
+    top: 80px;
     right: 54px;
   }
   .popup-item {
@@ -58,7 +56,7 @@ and (max-width:1024px) {
 }
 #icons {
   position: absolute;
-  top: 80px;
+  top: 90px;
   left: 40px;
 }
 #icons a{
@@ -93,6 +91,8 @@ and (max-width:1024px) {
   font-size: 22px;
   font-weight: bold;
 }
-
+.desktop {
+  display: none;
+}
 
 }
