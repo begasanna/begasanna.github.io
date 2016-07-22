@@ -11,7 +11,7 @@ body {
 }
 #icons a{
   @include icons;
-}
+  }
 
 @import "_header";
 @import "_content";

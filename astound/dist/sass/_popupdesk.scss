@@ -4,8 +4,8 @@ and (min-width: 1024px){
   display: inline-block;
   }
 .popup{
-  width: 830px;
-  max-width: 830px;
+  width: 835px;
+  max-width: 835px;
   text-align: left;
   }
 .popup-name {
@@ -54,13 +54,24 @@ and (min-width: 1024px){
 .popup-text-name {
   display:none;
 }
-.open-icons {
+.open-icons img{
   position: absolute;
-  transform: rotate(45deg);
   top: 40px;
   left: 40px;
+  transform: rotate(135deg);
 }
 #icons {
   left: 25px;
+}
+#openicon img{
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#openicon.rotate_but img{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 }

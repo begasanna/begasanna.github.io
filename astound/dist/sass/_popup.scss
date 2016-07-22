@@ -10,11 +10,14 @@
 #modal_popup {
   position: absolute;
   z-index: 10;
-  // display: none;
+  display: none;
   // opacity: 0;
 }
 .popup-photo {
   width: 100%;
+}
+#icons a{
+  @include icons;
 }
 .popup-close{
   text-align: right;
@@ -42,6 +45,10 @@
 .popup-ratio{
   float: right;
   padding-right: 40px;
+}
+.popup-ratio img {
+  width: 16px;
+  height: 16px;
 }
 .popup-ratio-star {
   display: inline-block;
