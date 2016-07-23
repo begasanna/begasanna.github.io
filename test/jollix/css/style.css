@@ -550,9 +550,7 @@ span.icon-strelki,span.icon-contact,span.icon-star{
 .footer_item a {
   color: #8e8e8e;
 }
-
-
-                                   /*Градиенты на бордерах*/
+                              /*Градиенты на бордерах*/
 
 .exchange::before,
 .exchange::after,
@@ -798,8 +796,8 @@ header::after{
   list-style: disc;
   list-style-position: inside;
   /*margin: 20px 30px;*/
-}
-.ways_mobile {
+/*}*/
+/*.ways_mobile {
   position: relative;
   width: 100%;
 }
@@ -840,9 +838,9 @@ li.open_menu {
   -moz-transform: rotate(90deg); /* Firefox */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
   -o-transform: rotate(90deg);
-}
+}*/
 
-.ways_sub {
+/*.ways_sub {
   display: none;
 }
 .open_menu:hover .ways_sub{
@@ -879,8 +877,8 @@ li.open_menu {
 .say_us li.mobile{
   display:block;
   margin-bottom: 23px;
-}
-.say_us li a {
+}*/
+/*.say_us li a {
   font-size: 30px;
   color: #1169EA;
   padding: 0 12px;
@@ -907,4 +905,4 @@ li.open_menu {
     width: auto;
     margin: 6px;
 }*/
-}
+/*}*/
