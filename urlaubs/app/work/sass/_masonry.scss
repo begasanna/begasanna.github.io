@@ -24,7 +24,7 @@
   color: #fff;
   position: absolute;
   width:100%;
-  top:40%;
+  top:45%;
   left: 0;
   font-size: 22px;
   text-align: center;
@@ -99,6 +99,28 @@ margin-bottom: 10px;
 .grid-item.cultur,
 .grid-item.relax{
   width: 65%;
+}
+.masonry_title{
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.question {
+  margin-bottom: 36px;
+}
+.masonry_interes {
+  width: 238px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 80px;
+}
+form a.logo_search_link {
+  width: 160px;
+  display: inline-block;
+  border: 2px solid white;
+
+}
+form a.logo_search_link:hover {
+  border: 2px solid $red;
 }
 
 }

@@ -55,8 +55,9 @@ p.logo_dreams, p.logo_dreams p {
   display: block;
   border-radius: 20px;
   font-weight: bold;
-  padding: 12px;
+  line-height: 38px;
   width: 270px;
+  height: 38px;
   margin: 0 auto;
   color: white;
   background-color: #ff4e50; }
@@ -239,8 +240,9 @@ img.some {
   display: block;
   border-radius: 20px;
   font-weight: bold;
-  padding: 12px;
+  line-height: 38px;
   width: 270px;
+  height: 38px;
   margin: 0 auto;
   color: #ff4e50;
   background-color: white;
@@ -297,7 +299,7 @@ img.some {
   color: #fff;
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: 45%;
   left: 0;
   font-size: 22px;
   text-align: center; }
@@ -364,7 +366,23 @@ img.photo {
     margin-bottom: 10px; }
   .grid-item.cultur,
   .grid-item.relax {
-    width: 65%; } }
+    width: 65%; }
+  .masonry_title {
+    margin-top: 90px;
+    margin-bottom: 40px; }
+  .question {
+    margin-bottom: 36px; }
+  .masonry_interes {
+    width: 238px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 80px; }
+  form a.logo_search_link {
+    width: 160px;
+    display: inline-block;
+    border: 2px solid white; }
+  form a.logo_search_link:hover {
+    border: 2px solid #ff4e50; } }
 
 footer {
   text-align: center; }
@@ -376,10 +394,11 @@ footer {
   footer p.p_black {
     color: #333;
     font-size: 14px;
+    font-weight: bold;
     font-family: "Montserrat", sans-serif; }
   footer p.copy {
     color: #ccc;
-    font-size: 10px;
+    font: bold 10px "Montserrat", sans-serif;
     display: block;
     padding: 20px 0 16px 0; }
   footer a.areto img {
@@ -392,3 +411,22 @@ footer {
 .footer_list a {
   font: lighter 14px "Roboto", sans-serif;
   color: #666; }
+
+@media screen and (min-width: 768px) {
+  footer {
+    width: 768px;
+    margin: 0 auto; }
+  footer p.logo_title {
+    padding: 0; }
+  .footer_l {
+    float: left;
+    padding: 40px; }
+  .footer_l:last-child {
+    float: right;
+    text-align: right; }
+  .footer_list {
+    display: block;
+    text-align: left;
+    padding: 10px 0 0 0; }
+  footer p.copy {
+    padding-top: 0px; } }
