@@ -5,7 +5,6 @@
   }
 }
 .step_1 {
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   background-image: url(../img/mob/step1_l.jpg);
 }
 .step_2 {
@@ -75,4 +74,43 @@ figcaption:before{
 .step_2:hover figcaption:before,
 .step_3:hover figcaption:before{
   opacity: 0;
+}
+// .steps_items.tablet {
+//   display: none;
+// }
+
+@media screen
+and (min-width : 768px) {
+.mobile {
+  display: none;
+}
+.tablet {
+  display: block;
+}
+.content .content_name{
+  margin-bottom: 40px;
+}
+#owl-carousel {
+  width: 236px;
+}
+ .step_items_1,
+ .step_items_2,
+ .step_items_3 {
+   width: 235px;
+   height: 400px;
+   position: relative;
+   display: inline-block;
+   padding: 3px;
+
+ }
+.step_1,.step_2,.step_3{
+    margin: 0 auto;
+    width: 236px;
+    text-align: left;
+    position: absolute;
+    background: none;
+    bottom:35px;
+    left: 0;
+    z-index: 1;
+}
 }

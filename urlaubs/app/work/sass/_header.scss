@@ -6,9 +6,6 @@
 
 }
 header {
-  // background: url('../../dist/img/mob/bcg_header.jpg') center no-repeat;
-  // background-repeat: no-repeat;
-  background-color: #000;
   background: url('../../dist/img/tab/bcg1600.jpg') center no-repeat;
 
   .logo {
@@ -25,6 +22,9 @@ header {
 .login_link {
   line-height: 30px;
   color: white;
+}
+.login_link:hover{
+  color:$red;
 }
 .login_item:last-child {
   padding: 5px;
@@ -53,4 +53,48 @@ p.logo_dreams,p.logo_dreams p {
   @include circle_link;
   color: white;
   background-color: $red;
+}
+.logo_search_link:hover {
+  color: $red;
+  background-color: #fff;
+}
+.tablet {
+  display: none;
+}
+
+@media screen and (min-width : 768px) {
+.tablet {
+  display: inline-block;
+}
+.mobile {
+  display: none;
+}
+.logo_float {
+  overflow: hidden;
+  zoom: 1; /* for IE */
+}
+.login_item_wrapper {
+  float: right;
+  padding-top: 10px;
+  margin-right: 50px;
+}
+.logo_title_wrapper {
+  float: left;
+  margin-left: 50px;
+  margin-top: 44px;
+}
+p.logo_dreams{
+  font-size: 52px;
+}
+.logo_find.tablet {
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 36px;
+}
+header .logo {
+  padding-bottom: 220px;
+}
+header {
+  margin-bottom: 95px;
+}
 }

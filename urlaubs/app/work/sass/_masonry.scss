@@ -1,14 +1,20 @@
 .masonry_img {
+  width: 320px;
   text-align: center;
   border-bottom: 4px solid $red;
+  margin: 0 auto;
 
   .logo_search_link {
     margin-bottom: 40px;
   }
 }
 .grid-item{
+  width: 300px;
   position: relative;
+  // float:none;
   width:100%;
+  height: 120px;
+  overflow: hidden;
 }
 .masonry_title {
   @include title_style;
@@ -44,6 +50,10 @@
 .grid-item.travel::after{
   content: 'Travelling';
 }
+img.photo {
+  padding: 5px;
+  border-radius: 10px;
+}
 .question {
   font-family: $roboto;
   font-size: 18px;
@@ -66,8 +76,24 @@
 }
 .masonry_interes:focus {
   outline-color: $red;
-    outline-style: auto;
-    outline-width: 0px;
+  outline-style: auto;
+  outline-width: 0px;
   border-color: $red;
+}
+@media screen
+and (min-width : 768px) {
+  .masonry_img {
+    width: 768px;
+    // margin: 0 auto;
+  }
+.grid-item img.photo {
+  width: 235px;
+  height: 310px;
+}
+.grid-item {
+width: auto;
+height: auto;
+
+}
 
 }

@@ -1,11 +1,15 @@
 .partner {
   text-align: center;
   color: black;
+
   .partner_title {
     @include title_style;
   }
+
   .partner_item {
+    margin: 0 auto;
     margin-bottom: 25px;
+    width: 250px;
   }
 }
 .partner_img {
@@ -27,7 +31,7 @@ img.some {
 font-family: $roboto;
 font-weight: lighter;
 font-size: 14px;
-margin: 10px 54px;
+margin: 10px 14px;
 color: #666;
 line-height: 1.15;
 }
@@ -36,4 +40,35 @@ line-height: 1.15;
   color: $red;
   background-color:white;
   border: 2px solid $red;
+}
+.partner_search_link:hover{
+  color: #fff;
+  background-color: $red;
+}
+@media screen and (min-width : 768px) {
+.partner {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  }
+.partner_title {
+  padding-top:70px;
+}
+.partner_group1 {
+  width: 250px;
+  float: left;
+}
+.partner_group2 {
+  width: 250px;
+  float: right;
+}
+.partner_groups{
+  overflow: hidden;
+  zoom:1;
+}
+.partner_search_link{
+  margin-top: 14px;
+  width: 190px;
+}
+
 }

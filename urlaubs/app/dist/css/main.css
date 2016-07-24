@@ -10,7 +10,6 @@ body {
   overflow-x: hidden; }
 
 header {
-  background-color: #000;
   background: url("../../dist/img/tab/bcg1600.jpg") center no-repeat; }
   header .logo {
     padding-bottom: 136px;
@@ -25,6 +24,9 @@ header {
 .login_link {
   line-height: 30px;
   color: white; }
+
+.login_link:hover {
+  color: #ff4e50; }
 
 .login_item:last-child {
   padding: 5px;
@@ -59,6 +61,41 @@ p.logo_dreams, p.logo_dreams p {
   color: white;
   background-color: #ff4e50; }
 
+.logo_search_link:hover {
+  color: #ff4e50;
+  background-color: #fff; }
+
+.tablet {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .tablet {
+    display: inline-block; }
+  .mobile {
+    display: none; }
+  .logo_float {
+    overflow: hidden;
+    zoom: 1;
+    /* for IE */ }
+  .login_item_wrapper {
+    float: right;
+    padding-top: 10px;
+    margin-right: 50px; }
+  .logo_title_wrapper {
+    float: left;
+    margin-left: 50px;
+    margin-top: 44px; }
+  p.logo_dreams {
+    font-size: 52px; }
+  .logo_find.tablet {
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 36px; }
+  header .logo {
+    padding-bottom: 220px; }
+  header {
+    margin-bottom: 95px; } }
+
 .content {
   text-align: center; }
   .content .content_name {
@@ -68,7 +105,6 @@ p.logo_dreams, p.logo_dreams p {
     margin: 20px 10px; }
 
 .step_1 {
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
   background-image: url(../img/mob/step1_l.jpg); }
 
 .step_2 {
@@ -136,6 +172,33 @@ p.logo_dreams, p.logo_dreams p {
 .step_3:hover figcaption:before {
   opacity: 0; }
 
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none; }
+  .tablet {
+    display: block; }
+  .content .content_name {
+    margin-bottom: 40px; }
+  #owl-carousel {
+    width: 236px; }
+  .step_items_1,
+  .step_items_2,
+  .step_items_3 {
+    width: 235px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    padding: 3px; }
+  .step_1, .step_2, .step_3 {
+    margin: 0 auto;
+    width: 236px;
+    text-align: left;
+    position: absolute;
+    background: none;
+    bottom: 35px;
+    left: 0;
+    z-index: 1; } }
+
 .partner {
   text-align: center;
   color: black; }
@@ -145,7 +208,9 @@ p.logo_dreams, p.logo_dreams p {
     font-weight: bold;
     margin: 20px 10px; }
   .partner .partner_item {
-    margin-bottom: 25px; }
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 250px; }
 
 .partner_img {
   position: relative;
@@ -166,7 +231,7 @@ img.some {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 14px;
-  margin: 10px 54px;
+  margin: 10px 14px;
   color: #666;
   line-height: 1.15; }
 
@@ -181,15 +246,44 @@ img.some {
   background-color: white;
   border: 2px solid #ff4e50; }
 
+.partner_search_link:hover {
+  color: #fff;
+  background-color: #ff4e50; }
+
+@media screen and (min-width: 768px) {
+  .partner {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 90px; }
+  .partner_title {
+    padding-top: 70px; }
+  .partner_group1 {
+    width: 250px;
+    float: left; }
+  .partner_group2 {
+    width: 250px;
+    float: right; }
+  .partner_groups {
+    overflow: hidden;
+    zoom: 1; }
+  .partner_search_link {
+    margin-top: 14px;
+    width: 190px; } }
+
 .masonry_img {
+  width: 320px;
   text-align: center;
-  border-bottom: 4px solid #ff4e50; }
+  border-bottom: 4px solid #ff4e50;
+  margin: 0 auto; }
   .masonry_img .logo_search_link {
     margin-bottom: 40px; }
 
 .grid-item {
+  width: 300px;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  height: 120px;
+  overflow: hidden; }
 
 .masonry_title {
   font-size: 22px;
@@ -228,6 +322,10 @@ img.some {
 .grid-item.travel::after {
   content: 'Travelling'; }
 
+img.photo {
+  padding: 5px;
+  border-radius: 10px; }
+
 .question {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -253,6 +351,16 @@ img.some {
   outline-style: auto;
   outline-width: 0px;
   border-color: #ff4e50; }
+
+@media screen and (min-width: 768px) {
+  .masonry_img {
+    width: 768px; }
+  .grid-item img.photo {
+    width: 235px;
+    height: 310px; }
+  .grid-item {
+    width: auto;
+    height: auto; } }
 
 footer {
   text-align: center; }
