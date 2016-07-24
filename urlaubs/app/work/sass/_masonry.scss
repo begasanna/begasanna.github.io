@@ -11,8 +11,8 @@
 .grid-item{
   width: 300px;
   position: relative;
-  // float:none;
   width:100%;
+  float: left;
   height: 120px;
   overflow: hidden;
 }
@@ -87,13 +87,18 @@ and (min-width : 768px) {
     // margin: 0 auto;
   }
 .grid-item img.photo {
-  width: 235px;
-  height: 310px;
+  // width: 235px;
+  // height: 310px;
+  border-radius: 10px;
 }
 .grid-item {
-width: auto;
-height: auto;
-
+width:32%;
+height: 310px;
+margin-bottom: 10px;
+}
+.grid-item.cultur,
+.grid-item.relax{
+  width: 65%;
 }
 
 }

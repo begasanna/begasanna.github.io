@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $(function(){
     function randomWord (min,max) {
     var random = min - 0.5 + Math.random() * (max-min +1);
@@ -42,7 +44,7 @@ var randNumber = randomWord(3,100);
            dataType : "jsonp",
            success: function(data){
              $.each(data.hits, function(i, val){
-                 document.getElementById('games').innerHTML = '<img class="photo" src="' + val.webformatURL + ' " width=300px>';
+                 document.getElementById('games').innerHTML = '<img class="photo" src="' + val.webformatURL + ' " >';
              });
             },
           });
@@ -52,7 +54,7 @@ var randNumber = randomWord(3,100);
            dataType : "jsonp",
            success: function(data){
              $.each(data.hits, function(i, val){
-                 document.getElementById('cultur').innerHTML = '<img class="photo" src="' + val.webformatURL + ' " width=300px>';
+                 document.getElementById('cultur').innerHTML = '<img class="photo" src="' + val.webformatURL + ' ">';
              });
             },
          });
@@ -62,7 +64,7 @@ var randNumber = randomWord(3,100);
            dataType : "jsonp",
            success: function(data){
              $.each(data.hits, function(i, val){
-               document.getElementById('relax').innerHTML = '<img class="photo" src="' + val.webformatURL + ' " width=300px>';
+               document.getElementById('relax').innerHTML = '<img class="photo" src="' + val.webformatURL + ' ">';
              });
             },
           });
@@ -72,8 +74,38 @@ var randNumber = randomWord(3,100);
            dataType : "jsonp",
            success: function(data){
              $.each(data.hits, function(i, val){
-              document.getElementById('travel').innerHTML = '<img class="photo" src="' + val.webformatURL + ' " width=300px>';
+              document.getElementById('travel').innerHTML = '<img class="photo" src="' + val.webformatURL + ' ">';
              });
            },
         });
             });
+
+            var window_size = $(window).width();
+                    if(window_size <= 768) {
+
+                   $('.grid').imagesLoaded( function() {
+                      $('.grid').masonry({
+                        // options
+                        itemSelector: '.grid-item',
+                        columnWidth: '.grid-item',
+                        containerStyle: { position: 'relative', width: '320px'},
+                        "gutter": 20
+                      });
+                    });
+                    }
+
+
+                    else {
+                      $('.grid').imagesLoaded( function() {
+                        $('.grid').masonry({
+                        // options
+                        itemSelector: '.grid-item',
+                        columnWidth: '.grid-item',
+                        containerStyle: { position: 'relative', width: '100%' },
+                        "gutter": 10
+                      });
+                    });
+                  }
+
+
+})

@@ -282,6 +282,7 @@ img.some {
   width: 300px;
   position: relative;
   width: 100%;
+  float: left;
   height: 120px;
   overflow: hidden; }
 
@@ -356,11 +357,14 @@ img.photo {
   .masonry_img {
     width: 768px; }
   .grid-item img.photo {
-    width: 235px;
-    height: 310px; }
+    border-radius: 10px; }
   .grid-item {
-    width: auto;
-    height: auto; } }
+    width: 32%;
+    height: 310px;
+    margin-bottom: 10px; }
+  .grid-item.cultur,
+  .grid-item.relax {
+    width: 65%; } }
 
 footer {
   text-align: center; }
