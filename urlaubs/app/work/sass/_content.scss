@@ -75,9 +75,7 @@ figcaption:before{
 .step_3:hover figcaption:before{
   opacity: 0;
 }
-// .steps_items.tablet {
-//   display: none;
-// }
+
 
 @media screen
 and (min-width : 768px) {
@@ -96,21 +94,36 @@ and (min-width : 768px) {
  .step_items_1,
  .step_items_2,
  .step_items_3 {
-   width: 235px;
-   height: 400px;
-   position: relative;
-   display: inline-block;
-   padding: 3px;
-
+  width: 235px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  padding: 3px;
  }
 .step_1,.step_2,.step_3{
-    margin: 0 auto;
-    width: 236px;
-    text-align: left;
-    position: absolute;
-    background: none;
-    bottom:35px;
-    left: 0;
-    z-index: 1;
+  margin: 0 auto;
+  width: 236px;
+  text-align: left;
+  position: absolute;
+  background: none;
+  bottom:35px;
+  left: 0;
+  z-index: 1;
 }
+}
+@media screen
+and (min-width:1024px) {
+#owl-carousel {
+  width: 300px;
+  }
+.step_items_1,
+.step_items_2,
+.step_items_3 {
+  width: 300px;
+  height: 400px;
+  padding: 3px;
+ }
+.step_1,.step_2,.step_3{
+  width: 300px;
+  }
 }

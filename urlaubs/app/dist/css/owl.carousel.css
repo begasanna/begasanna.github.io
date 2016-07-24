@@ -19,6 +19,13 @@
 	width: 236px;
 	-ms-touch-action: pan-y;
 }
+@media screen
+and (min-width: 1024px) {
+	.owl-carousel{
+		width: 300px;
+	}
+
+}
 .owl-carousel .owl-wrapper{
 	display: none;
 	position: relative;

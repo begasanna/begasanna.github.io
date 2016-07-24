@@ -1,9 +1,6 @@
 .wrapper {
   width: 100%;
-//   margin: 0 auto;
-  // max-width: 320px;
   overflow-x: hidden;
-
 }
 header {
   background: url('../../dist/img/tab/bcg1600.jpg') center no-repeat;
@@ -96,5 +93,16 @@ header .logo {
 }
 header {
   margin-bottom: 95px;
+}
+}
+
+@media screen and (min-width : 1024px){
+.logo {
+  width: 940px;
+  margin: 0 auto;
+  }
+.logo_search_link {
+  font-size: 14px;
+  width: 225px;
 }
 }

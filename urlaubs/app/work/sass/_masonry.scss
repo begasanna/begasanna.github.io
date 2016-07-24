@@ -1,7 +1,6 @@
 .masonry_img {
   width: 320px;
   text-align: center;
-  border-bottom: 4px solid $red;
   margin: 0 auto;
 
   .logo_search_link {
@@ -84,11 +83,8 @@ img.photo {
 and (min-width : 768px) {
   .masonry_img {
     width: 768px;
-    // margin: 0 auto;
-  }
+    }
 .grid-item img.photo {
-  // width: 235px;
-  // height: 310px;
   border-radius: 10px;
 }
 .grid-item {
@@ -117,10 +113,13 @@ form a.logo_search_link {
   width: 160px;
   display: inline-block;
   border: 2px solid white;
-
 }
 form a.logo_search_link:hover {
   border: 2px solid $red;
 }
-
+}
+@media screen and (min-width : 1024px) {
+.masonry_img {
+  width: 940px;
+  }
 }

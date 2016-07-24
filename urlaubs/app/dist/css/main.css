@@ -97,6 +97,14 @@ p.logo_dreams, p.logo_dreams p {
   header {
     margin-bottom: 95px; } }
 
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 940px;
+    margin: 0 auto; }
+  .logo_search_link {
+    font-size: 14px;
+    width: 225px; } }
+
 .content {
   text-align: center; }
   .content .content_name {
@@ -200,6 +208,18 @@ p.logo_dreams, p.logo_dreams p {
     left: 0;
     z-index: 1; } }
 
+@media screen and (min-width: 1024px) {
+  #owl-carousel {
+    width: 300px; }
+  .step_items_1,
+  .step_items_2,
+  .step_items_3 {
+    width: 300px;
+    height: 400px;
+    padding: 3px; }
+  .step_1, .step_2, .step_3 {
+    width: 300px; } }
+
 .partner {
   text-align: center;
   color: black; }
@@ -272,10 +292,18 @@ img.some {
     margin-top: 14px;
     width: 190px; } }
 
+@media screen and (min-width: 1024px) {
+  .partner {
+    width: 940px; }
+  .partner_group1, .partner_group2 {
+    width: 470px; }
+  .partner .partner_item {
+    width: 230px;
+    float: left; } }
+
 .masonry_img {
   width: 320px;
   text-align: center;
-  border-bottom: 4px solid #ff4e50;
   margin: 0 auto; }
   .masonry_img .logo_search_link {
     margin-bottom: 40px; }
@@ -384,6 +412,15 @@ img.photo {
   form a.logo_search_link:hover {
     border: 2px solid #ff4e50; } }
 
+@media screen and (min-width: 1024px) {
+  .masonry_img {
+    width: 940px; } }
+
+.red_line {
+  width: 100%;
+  height: 4px;
+  background-color: #ff4e50; }
+
 footer {
   text-align: center; }
   footer p.logo_title {
@@ -430,3 +467,7 @@ footer {
     padding: 10px 0 0 0; }
   footer p.copy {
     padding-top: 0px; } }
+
+@media screen and (min-width: 1024px) {
+  footer {
+    width: 940px; } }

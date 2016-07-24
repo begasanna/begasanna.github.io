@@ -28,13 +28,13 @@ img.some {
   margin: 12px auto;
 }
 .partner_bio {
-font-family: $roboto;
-font-weight: lighter;
-font-size: 14px;
-margin: 10px 14px;
-color: #666;
-line-height: 1.15;
-}
+  font-family: $roboto;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 10px 14px;
+  color: #666;
+  line-height: 1.15;
+  }
 .partner_search_link {
   @include circle_link;
   color: $red;
@@ -70,5 +70,16 @@ line-height: 1.15;
   margin-top: 14px;
   width: 190px;
 }
-
+}
+@media screen and (min-width : 1024px) {
+.partner {
+  width: 940px;
+}
+.partner_group1,.partner_group2 {
+  width: 470px;
+  }
+.partner .partner_item {
+  width: 230px;
+  float: left;
+}
 }
