@@ -22,6 +22,10 @@ css, html
 
 css, html, illustrator, svg, icomoon
 
-[URLAUBSGLÜCK] (http://begasanna.github.io/frontend/URLAUBS/index.html) underway....
+[URLAUBSGLÜCK] (http://begasanna.github.io/urlaubs/app/index.html)
 
 css, html, js, jquery, masonry, carousel, ajax, gulp, scss, concat
+
+[MAGAZIN] (http://begasanna.github.io/astound/app/index.html#)
+
+css, html, js, jquery, modal window, gulp, sass
