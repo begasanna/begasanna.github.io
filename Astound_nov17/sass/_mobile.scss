@@ -7,18 +7,22 @@
   }
   .wrapper{
     max-width: 400px;
+    min-width: 320px;
+    padding: 60px 0;
   }
   .product_name{
     width: 100%;
-    padding: 0 30px 30px;
+    padding: 0 40px 30px;
     margin: 0;
+    // text-align: center;
   }
   .img_box{
     width: 100%;
+    text-align: center;
   }
   .product_info{
     width: 100%;
-    padding: 14px 30px;
+    padding: 14px 40px;
   }
   .old_price, .discount_price, .common_price {
     margin-right: 10px;
@@ -46,6 +50,7 @@
   }
   .product_size_select,
   .product_color_select{
+    display: block;
     margin-left: -5px;
   }
   button.add_to_cart{
@@ -65,7 +70,7 @@
   }
 .bx-wrapper {
   position: relative;
-  margin: 60px auto;
+  margin: 0px auto 60px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
